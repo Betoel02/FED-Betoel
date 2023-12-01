@@ -1,0 +1,87 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+    /* startje */
+    --color-text-black: #111;
+    --color-text-white: #fff;
+    --color-background: #FFCE01;
+    --font-family: 'open sans', sans-serif;
+}
+
+/* @media (prefers-color-scheme:dark) {
+    :root {
+        
+    }
+} */
+
+/* 78em = 1250px */
+/* @media (min-with: 45em) {} */
+    
+header section h1 {
+    display: none;
+}
+
+body {
+    padding-top: 1em;
+    background-color: var(--color-background);
+    transition: background-color .6s linear;
+    font-family: Gotham Rounded SSm, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.375;
+    font-weight: 400;
+}
+
+main {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+nav {
+    position: fixed;
+    z-index: 2;
+    background-color: var(--color-background);
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+header li {
+    list-style: none;
+    padding: 1em;  
+}
+
+header li a {
+    text-decoration: none;
+    color: var(--color-text-black);
+    font-size: 1.4em;
+}
+
+main {
+    position: relative;
+    width: 100%;
+}
+
+main section {
+    min-width: 100%;
+    height: auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    background: #ffff;
+}
