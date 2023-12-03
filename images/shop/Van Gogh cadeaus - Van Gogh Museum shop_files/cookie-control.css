@@ -1,0 +1,369 @@
+/** Parent element, containing elements */
+#scms-cc-cookie-bar {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 10000;
+	_position: absolute;
+	top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
+	width: 100%;
+	text-align: left;
+    font-family: 'Gotham Rounded SSm', Verdana, Arial, sans-serif;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.8);
+	*background-color: #fceda3; /** IE7 and down should show solid bgcolor */
+}
+
+#scms-cc-cookie-bar .cb-content-container {
+    padding: 25px 20px 20px;
+    border: none;
+    box-shadow: none;
+}
+
+#scms-cc-cookie-bar .closeCookieBar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5em;
+    font-size: 1.1em;
+    color: #c7c7c7;
+    text-decoration: none;
+}
+
+#scms-cc-cookie-bar .closeCookieBar::after {
+    content: '\e801';
+    font-family: "font-icons";
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+/** Button layout */
+#scms-cc-cookie-bar .cb-button,
+#scms-cc-cookie-bar .cb-button:visited {
+	display: inline-block;
+	position: relative;
+	margin-bottom: 3px;
+	padding: 0 1.25rem;
+	font: bold 12px/12px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 2.5rem;
+	text-decoration: none;
+    background: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+	border: 1px solid #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 1.25rem;
+	-webkit-transition: 0.1s linear all;
+	-moz-transition: 0.1s linear all;
+	transition: 0.1s linear all;
+	overflow: visible; /** Fixes width bug in IE7 and down */
+}
+
+#scms-cc-cookie-bar .cb-button:hover {
+    border: 1px solid #000;
+    background-color: #000;
+    text-decoration: none;
+}
+
+#scms-cc-cookie-bar .cb-button-primary,
+#scms-cc-cookie-bar .cb-button-primary:visited {
+	text-decoration: none;
+	color: #000;
+    background-color: #fff;
+}
+#scms-cc-cookie-bar .cb-button-primary:hover {
+    color: #fff;
+    background: #000;
+    text-decoration: none;
+}
+
+#scms-cc-cookie-bar .cb-button-tertiary,
+#scms-cc-cookie-bar .cb-button-tertiary:hover,
+#scms-cc-cookie-bar .cb-button-tertiary:visited {
+	font-weight: normal;
+	text-shadow: none;
+	color: #00829b;
+	border: 0;
+	background: transparent;
+	-ms-filter: none;
+	filter: none;
+}
+
+#scms-cc-cookie-bar .cb-button:hover {
+	background-position: 0 -15px;
+}
+
+#scms-cc-cookie-bar.cb-open .cb-content-row {
+	margin-bottom: 1em;
+	padding: 0 0 1em;
+	border-bottom: 3px dotted #e6c463;
+}
+
+#scms-cc-cookie-bar.cb-open .cb-content-row-2 {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
+/** Content holder */
+#scms-cc-cookie-bar .cb-content-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+#scms-cc-cookie-bar .cb-content-row-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+#scms-cc-cookie-bar .cb-content {
+	position: relative;
+	width: 100%;
+}
+
+#scms-cc-cookie-bar .cb-content-left {
+	width: 65%;
+}
+
+#scms-cc-cookie-bar.cb-open .cb-content-left {
+	width: 80%;
+}
+
+#scms-cc-cookie-bar .cb-content-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+#scms-cc-cookie-bar .cb-settingsLink {
+    padding: 0.5em 0 0 0;
+    line-height: normal;
+    border-radius: 0;
+    text-decoration: underline;
+    background: transparent;
+    transition: none;
+}
+
+/** Content row headings */
+#scms-cc-cookie-bar label {
+	font: bold 13px/18px Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/** Cookie bar content layout */
+#scms-cc-cookie-bar p {
+	margin: 0 0 3px;
+	text-indent: 0;
+}
+
+#scms-cc-cookie-bar a,
+#scms-cc-cookie-bar a:hover,
+#scms-cc-cookie-bar a:visited,
+#scms-cc-cookie-bar a:focus {
+	color: #fff;
+}
+
+#scms-cc-cookie-bar a:hover {
+	text-decoration: underline;
+}
+
+#scms-cc-cookie-bar strong {
+	display: inline;
+	font-weight: bold;
+}
+
+
+@media all and (max-width: 840px) {
+	#scms-cc-cookie-bar .cb-content-left,
+	#scms-cc-cookie-bar.cb-open .cb-content-left {
+		width: 95%;
+	}
+
+	#scms-cc-cookie-bar .cb-inner-content {
+		padding: 0;
+	}
+
+	#scms-cc-cookie-bar .cb-content-right {
+        display: block;
+		width: 95%;
+		margin: 1em 0 0 0;
+	}
+
+    #scms-cc-cookie-bar .cb-content-row {
+        display: block;
+    }
+}
+
+@media all and (max-width: 500px) {
+	#scms-cc-cookie-bar {
+		font: 14px/18px Arial, "Helvetica Neue", Helvetica, sans-serif;
+		border-top: 0;
+		border-bottom: 1px solid #b19d44;
+		-webkit-box-shadow: 0 8px 6px -6px #000;
+		-moz-box-shadow: 0 8px 6px -6px #000;
+		box-shadow: 0 8px 6px -6px #000;
+	}
+
+	.scms-cookie-control .cb-button {
+		margin-bottom: 5px;
+		padding: 8px 14px;
+		font: bold 14px/14px Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+}
+
+ #scms-cc-cookie-bar .cb-buttons .cb-inner-content {
+	padding: 0;
+ }
+
+ #scms-cc-cookie-bar.cb-open .cb-buttons {
+	display: none;
+ }
+
+/** Toggle cookie settings visibility */
+#scms-cc-cookie-bar .cb-content-row-2 {
+	display: none;
+}
+
+#scms-cc-cookie-bar.cb-open .cb-content-row-2 {
+	display: block;
+}
+
+/** Form */
+#scms-cc-cookie-bar.cb-open .cb-content-row-2 fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/** Settings form */
+#scms-cc-cookie-bar .cb-cookie-settings ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#scms-cc-cookie-bar .cb-cookie-settings li {
+	position: relative;
+	float: left;
+	width: 32%;
+	min-height: 100px;
+	_height: 100px;
+	margin: 0 10px 10px 0;
+	padding: 10px 100px 10px 10px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+@media all and (max-width: 768px) {
+	#scms-cc-cookie-bar .cb-cookie-settings li {
+		width: 100%;
+		clear: left;
+	}
+}
+
+#scms-cc-cookie-bar.cb-js .cb-cookie-settings li {
+	cursor: pointer;
+}
+
+#scms-cc-cookie-bar.cb-js .cb-cookie-settings .cb-cookies-always-on,
+#scms-cc-cookie-bar.cb-js .cb-cookie-settings .cb-cookies-always-on label,
+#scms-cc-cookie-bar.cb-js .cb-cookie-settings .cb-cookies-always-on .cb-onoffswitch {
+	cursor: default;
+}
+
+/** Checkboxes */
+#scms-cc-cookie-bar .cb-onoffswitch-checkbox {
+	width: auto;
+	height: auto;
+	margin-top: -2px;
+	padding: 0;
+	vertical-align: middle;
+}
+
+/** On / off switches */
+#scms-cc-cookie-bar .cb-onoffswitch {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 55px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+#scms-cc-cookie-bar .cb-onoffswitch-wrapper {
+	overflow: hidden;
+	border: 2px solid #fff;
+}
+
+#scms-cc-cookie-bar .cb-onoffswitch-inner {
+	display: block;
+	width: 200%;
+	margin-left: -100%;
+	-moz-transition: margin 0.3s ease-in 0s;
+	-webkit-transition: margin 0.3s ease-in 0s;
+	-o-transition: margin 0.3s ease-in 0s;
+	transition: margin 0.3s ease-in 0s;
+}
+
+#scms-cc-cookie-bar .cb-onoffswitch-inner span {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 20px;
+	padding: 0;
+	color: #fff;
+	font: bold 12px/22px Arial, "Helvetica Neue", Helvetica, sans-serif;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#scms-cc-cookie-bar .cb-onoffswitch-inner .cb-onoffswitch-active {
+	padding-right: 17px;
+	text-align: center;
+	background-color: #3d8830;
+	color: #fff;
+}
+
+#scms-cc-cookie-bar .cb-onoffswitch-inner .cb-onoffswitch-inactive {
+	padding-left: 17px;
+	background-color: #eee;
+	color: #777;
+	text-align: center;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+#scms-cc-cookie-bar .cb-onoffswitch-switch {
+	display: block;
+	position: absolute;
+	top: 5px;
+	right: 34px;
+	width: 10px;
+	height: 10px;
+	margin: 0;
+	background: #ccc;
+	border: 2px solid #999;
+	border-radius: 15px;
+	-moz-transition: all 0.3s ease-in 0s;
+	-webkit-transition: all 0.3s ease-in 0s;
+	-o-transition: all 0.3s ease-in 0s;
+	transition: all 0.3s ease-in 0s;
+}
+
+#scms-cc-cookie-bar .cb-cookies-enabled .cb-onoffswitch-inner {
+	margin-left: 0;
+}
+
+#scms-cc-cookie-bar .cb-cookies-enabled .cb-onoffswitch-switch {
+	right: 6px;
+}

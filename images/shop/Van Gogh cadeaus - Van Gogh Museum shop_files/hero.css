@@ -1,0 +1,126 @@
+.heroAT {
+    position: relative;
+    display: block;
+    min-height: 200px;
+    max-height: 400px;
+    padding-bottom: 40%;
+    overflow: hidden;
+    background: #fff no-repeat center center;
+    background-size: 100% 100%;
+    background-size: cover;
+}
+
+.heroAT__image {
+    position: absolute;
+    visibility: hidden;
+}
+
+.heroAT__content {
+    padding: 3em 0 3em 2em;
+}
+
+.heroAT__content .cta-button:after {
+    position: relative;
+    right: -7px;
+}
+
+.heroAT__title {
+    margin-bottom: 1em;
+}
+
+.heroAT__intro {
+    display: none;
+    max-width: 40em;
+    margin-bottom: 1.5em;
+    font-size: 0.9em;
+}
+
+.heroAT__intro--mobile {
+    display: block;
+}
+
+@media (min-height: 800px) {
+    .heroAT {
+        padding-bottom: 50%;
+    }
+}
+
+@media (min-width: 500px) {
+    .heroAT__content {
+        width: calc(100% - 120px);
+    }
+
+    .heroAT__intro {
+        display: block;
+    }
+
+    .heroAT__intro--mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .heroAT__content {
+        position: absolute;
+    }
+}
+
+@media (min-width: 1280px) {
+    .heroAT {
+        padding-bottom: 35%;
+    }
+}
+
+@media (min-width: 1680px) {
+    .heroAT {
+        padding-bottom: 25%;
+    }
+}
+
+/**
+ *   Image copyright
+ */
+
+.heroAT__copyright {
+    position: absolute;
+    right: 1em;
+    bottom: .5em;
+    font-size: .6em;
+}
+
+.heroAT__copyright a {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 1px 1px 10px #000;
+}
+
+.heroAT__copyright a:hover {
+    text-decoration: underline;
+}
+
+.heroAT__copyrightImage + .heroAT__copyrightText {
+    position: absolute;
+    left: -999em;
+}
+
+/**
+ * Background types
+ */
+
+.heroAT--dark .heroAT__link {
+    color: #000;
+    background-color: #fff;
+}
+
+/**
+ * URL overlay
+ */
+
+.heroAT__urlOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+}

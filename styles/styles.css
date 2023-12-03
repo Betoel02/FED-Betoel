@@ -30,7 +30,7 @@
 /* 78em = 1250px */
 /* @media (min-with: 45em) {} */
     
-header section h1 {
+body h1 {
     display: none;
 }
 
@@ -44,44 +44,83 @@ body {
     font-weight: 400;
 }
 
-main {
-    overflow-x: scroll;
-    overflow-y: hidden;
-}
+/* Header ----------------------------------*/
 
 nav {
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 2;
     background-color: var(--color-background);
 }
 
-header ul {
+nav ul {
+    padding: 2em 2em 1em 1em;
     display: flex;
     justify-content: space-evenly; 
 }
 
-header li {
+nav li {
+    display: inline-block;
     list-style: none;
-    padding: 1em;  
+    padding: 1em; 
 }
 
-header li a {
+nav li a {
     text-decoration: none;
     color: var(--color-text-black);
-    font-size: 1.4em;
+    font-size: 1em;
 }
+
+nav li a:hover {
+    text-decoration: underline;
+    color: var(--color-text-black);
+}
+
+nav li a img:nth-of-type(3) {
+    width: 1em;
+}
+
+/* Main ----------------------------------*/
 
 main {
-    position: relative;
     width: 100%;
+    overflow: scroll;
+    display: flex;
+    overflow-y: hidden;
+    white-space: nowrap; /* Prevent text wrapping to the next line */
+    padding-top: 10em;
 }
 
+
+
 main section {
-    min-width: 100%;
+    max-width: 100%;
+    white-space: normal;
+    top: 6em;
     height: auto;
-    /* display: flex;
+    /* /* display: flex; */
     justify-content: center;
-    align-items: center; */
-    height: 100vh;
-    background: #ffff;
+    align-items: center;
+    position: relative;
+    display: flex;
+    margin: 0 auto; /* Center the content horizontally */
+    display: inline-block; /* Ensure the section doesn't take the full width */
+}
+
+main article {
+    flex: 0 0 auto; /* Make articles flexible and not shrinkable */
+    min-width: 100%;
+    position: absolute;
+    padding: 1.25rem;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: flex-end; */
+    text-decoration: none;
+    display: inline-block; /* Display articles in a row */
+    vertical-align: top; /* Align articles to the top */
+}
+
+main article:nth-last-of-type(2) {
+    border-radius: 1em;
 }

@@ -1,0 +1,182 @@
+/**
+ * @about: 	print.css - Default print styles for the webshop
+ */
+
+/**
+ * These elements shouldn't be printed
+ */
+
+#webshop-shopping-cart-snippet,
+.webshop-product-search,
+.webshop-breadcrumbs,
+.webshop-back-link,
+.add-to-shopping-cart,
+.product-add-to-favorites,
+.webshop-category-tree,
+.link-to-category,
+.link-to-product,
+.product-actions,
+.review-count,
+.form-bc,
+.button-delete,
+.webshop-shopping-cart td a,
+.clear-shopping-cart,
+#shopping-cart-buttons_next,
+.webshop-back-to-shop,
+.webshop-products-nav {
+    display: none;
+}
+
+/**
+ * Generic list styles
+ */
+
+.webshop-categories,
+.product-list,
+.related-product-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.webshop-categories li,
+.product-list li,
+.related-product-list li {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 2% 0;
+    border-bottom: 1px solid #000;
+    vertical-align: top;
+}
+
+.webshop-categories li img,
+.product-list li img,
+.product-image,
+.related-product-list li img {
+    float: left;
+    max-width: 15em;
+    margin: 0 1em 1em 0;
+}
+
+.webshop-categories h3,
+.product-list h3,
+.related-product-list h3 {
+    margin: 0 0 .5em;
+    font-size: 1.2em;
+}
+
+h3 a {
+    text-decoration: none;
+}
+
+/**
+ * .webshop-categories
+ */
+
+.webshop-categories {
+    margin-top: 1%;
+}
+
+.webshop-category-introduction {
+    overflow: hidden;
+}
+
+.webshop-category-introduction img {
+    float: left;
+    margin-right: 1em;
+}
+
+/**
+ * .product-price
+ */
+
+.product-list .product-price {
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.product-price .regular {
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+
+/**
+ * .product-details
+ */
+
+.product-details {
+    overflow: hidden;
+}
+
+.product-image {
+    max-width: 20em;
+}
+
+.product-details-list dt {
+    float: left;
+    margin-right: .5em;
+}
+
+/**
+ * .related-products
+ */
+
+.related-products {
+    clear: left;
+}
+
+/**
+ * .webshop-shopping-cart
+ */
+
+table.shoppingcart {
+    width: 100%;
+    font-size: .8em;
+}
+
+.shoppingcart caption {
+    border-bottom: 1px solid #000;
+    font-weight: bold;
+    text-align: left;
+}
+
+.webshop-shopping-cart thead th {
+    text-align: left;
+    vertical-align: top;
+    font-size: .9em;
+}
+
+.webshop-shopping-cart thead .buttons {
+    text-indent: -999em;
+    font-size: 0em;
+}
+
+.shoppingcart tbody {
+    vertical-align: top;
+}
+
+.webshop-shopping-cart td .product-image-container {
+    display: block;
+}
+
+.shoppingcart .product-image {
+    max-width: 5em;
+}
+
+.s-quantity input {
+    border: 0;
+}
+
+.totals-column {
+    text-align: right;
+}
+
+/**
+ * Order view in frontend
+ */
+
+span.mw-original-price {
+    text-decoration: line-through;
+}

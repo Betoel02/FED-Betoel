@@ -1,0 +1,28 @@
+/**
+ * CSS related to products popup
+ */
+
+.shopping-cart-compact .c-productsPopup {
+    opacity: 0;
+    top: -9999em;
+    visibility: hidden;
+    -webkit-transform: translate(0, -200px);
+    -ms-transform: translate(0, -200px);
+    transform: translate(0, -200px);
+    transition: opacity 0.2s ease-out 0.3s, transform 0s 0.5s, top 0s 0.5s, visibility 0s 0.5s;
+}
+
+@media (min-width: 1024px) {
+    .shopping-cart-compact:hover .c-productsPopup,
+    .shopping-cart-compact--productsPopupOpen .c-productsPopup,
+    .shopping-cart-compact--peekInto .c-productsPopup {
+        opacity: 1;
+        top: 100%;
+        margin-top: 0;
+        visibility: visible;
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+        transition: opacity 0.3s ease-out, transform 0.3s ease-out, top 0s, visibility 0s;
+    }
+}

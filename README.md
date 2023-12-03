@@ -42,11 +42,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Van Gogh homepage: 
-  <img src="readme-images/homepagina_van_gogh_museum.png" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/1a_homepagina_van_gogh_museum.png.png" width="375px" alt="Website eerste opzichte horizontale scroll">
+  <img src="readme-images/2a_homepagina_van_gogh_museum.png" width="375px" alt="Zichtbare gradient effect van horizontale scroll">
+  <img src="readme-images/3a_homepagina_van_gogh_museum.png" width="375px" alt="Laaste gradient effect en einde homepage">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/1b_shop_page_van_gogh_museum.png" width="375px" alt="Gehele verticale scroll pagina">
+  De shop pagina is wel anders dan de home, deze is weer verticaal mogelijk om te scrollen.
  
 </details>
 
@@ -84,7 +87,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-## Voortgang 1 (week 2)
+## Voortgang 1 (week 2) - donderdag 30/11/2023
 
 <details>
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
@@ -92,24 +95,33 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Samen met studentassistent zijn we in de les van 30 november de 'Breakdown' opdracht gaan doornemen. Daarbij gaf hij aan om de in de header de dubbele navbar op te nemen. 
+  
+  <img src="readme-images/1c_voortgangsgesprek_.png" width="375px" alt="breakdown van de hele pagina">
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
+  Zelf twijfelde ik wat handig was over de opdeling hiervan, dus dit bracht mij tot een nieuwe inzicht. Daarnaast gaf hij aan dat mijn breakdown er prima uitzag en keken we verder naar de opdeling van de code en hoe de site als basis aangepakt kan worden. Voor op de home pagina had ik een aantal vragen over de uitdaging van de horizontale scroll effect. Ik dacht eerst aan het begin dat het verstandig was om de scroll effect als carrousel te zien, echt vond ik het idee om de de kaartjes beter in een list te stoppen, logischer. Dus heb ik mijn vraag voorgelegd aan hem, waarna hij het volgende op antwoordde: "Om eerst de horizontale scroll effect aan te pakken kun je het volgde regel toepassen":
+  
+  main {
+     overflow-x: scroll;
+     overflow-y: hidden;
+  }
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Bron: https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x
 
+  Ik heb deze regel toepgepast in mijn code nadat ik thuis aankwam, echter is het mij niet gelukt om deze werkend te krijgen. Morgen zal ik dit opnieuw proberen.
 
-  ### Verslag van meeting
+  Andere vraag die ik had over de Home page scroll effect was de kleur overgang van: geel- oranje naar paars. Hij gaf aan dat ik dit kon doen door vanaf een X aantal px breedte van het scherm, de kleur overgang geleidelijk kan laten overzetten naar een ander kleur. Dit kon ik beter later toepassen zei hij aangezien het voor nu niet heel dringend is voor de site.
+
+  Ook zijn we gaan kijken naar de tweede Shop pagina, hij vond het  een goed idee dat ik de hele pagina omzet naar een Grid aangezien er veel gebeurd op de Van Gogh site en deze nog redelijk rommelig oogt. Hierin zag hij kansen om het mooier en professioneler te maken, daarbij kan een Grid veel impact leveren. 
+  
+
+  ### Verslag van meeting, hoofdlijnen in het kort:
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Breakdown sheet besproken (navbar fix).
+  - Horizontale scroll effect= overflow-x: scroll;
+  - Gradient break is verbonden aan X aantal px, hierover meer in een latere fase.
+  - Grid kan ik goed toepassen op mijn tweede Shop pagina. 
 
 </details>
 
