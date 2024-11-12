@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Mix van alle pisten (kon kiezen uit zwart, rood óf blauw)
 
   #### Je focus:
-  Surface plane (kies uit responsive óf surface plane)
+  Responsive ivm horizontale scroll. (kies uit responsive óf surface plane)
  
 </details>
 
@@ -82,8 +82,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
-
-
 
 
 
@@ -176,7 +174,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-## Voortgang 3 (week 4)
+## Voortgang 3 (week 4) donderdag 11/01/2024
 
 <details>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
@@ -184,21 +182,38 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+Donderdag 11 januari was de laatste voortgangsgesprek. Daarvoor wilde ik 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  Vragen die ik wil stellen:
+  1. Kleur overgang tijdens het horizontaal scrollen van de homepagina. Kan dit gedaan worden met css door middel van transform?
+  2. Toegankelijkheid WCAG richtlijnen, welke moet ik aan houden?
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  hier na afloop snel de uitkomsten van de meeting vastleggen.
 
-  - punt 1
+  Tijdens het gesprek wilde ik graag meer te weten komen over hoe ik de kleur overgang op mijn homepagina het beste zou kunnen aanpakken. Zelf had ik transform gebruikt:
+  
+  transition: background-color 6s linear;
+
+  En zo zag het er uit in mijn html 'body':
+  
+  body {
+      padding-top: 1em;
+      background-color: var(--color-background-yellow);
+      transition: background-color 6s linear;
+      font-family: var(--font-nunito);
+      font-size: 1rem;
+      line-height: 1.375;
+  }
+
+  Van Marten had ik geleerd dat ik dit het beste kon doen door de viewport van de totale width van het gehele horizontale scroll pagina, op te splitsen in drieën.
+
+  <img src="readme-images/1c_voortgangsgesprek_.png" width="375px" alt="breakdown van de hele pagina">
+
+  Echter weet ik niet of dit mij zal lukken binnen de deadline, dus heb ik dit open laten staan voor een mogelijke bonus.
+
+  Daarin had ik vermeld dat 
   - punt 2
   - nog een punt
   - ...

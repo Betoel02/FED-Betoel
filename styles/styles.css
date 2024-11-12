@@ -1,126 +1,369 @@
-/**************/
-/* CSS REMEDY */
-/**************/
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
 :root {
-    /* startje */
-    --color-text-black: #111;
-    --color-text-white: #fff;
-    --color-background: #FFCE01;
-    --font-family: 'open sans', sans-serif;
+  /* startje */
+  --color-black: #111;
+  --color-white: #fff;
+  --color-yellow: #ffce01;
+  --color-blue: #0099d9;
+  --font-family: "open sans", sans-serif;
+  --font-nunito: "nunito", sans-serif;
 }
 
 /* @media (prefers-color-scheme:dark) {
-    :root {
-        
+    :root {  
     }
 } */
 
 /* 78em = 1250px */
 /* @media (min-with: 45em) {} */
-    
+
+/* Door Sanne 't hooft aanbevolen! ivm screenreader*/
 body h1 {
-    display: none;
+  display: none;
 }
 
 body {
-    padding-top: 1em;
-    background-color: var(--color-background);
-    transition: background-color .6s linear;
-    font-family: Gotham Rounded SSm, Arial, sans-serif;
-    font-size: 1rem;
-    line-height: 1.375;
-    font-weight: 400;
+  padding: 1em 0 0 2em;
+  background-color: var(--color-yellow);
+  transition: background-color 6s linear;
+  font-family: var(--font-nunito);
+  font-size: 1rem;
+  line-height: 1.375;
+
 }
 
-/* Header ----------------------------------*/
+/* Header ---------------------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Aanzetten voor opdracht eisen? */
+header button {
+  display: none;
+}
+
+
 
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    background-color: var(--color-background);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* z-index: 2; */
+  /* background-color: var(--color-background-yellow); */
 }
 
-nav ul {
-    padding: 2em 2em 1em 1em;
-    display: flex;
-    justify-content: space-evenly; 
+nav ul:nth-of-type(1) {
+  padding: 2em 2em 1em 1em;
+  display: flex;
+  justify-content: space-evenly;
+  display: none;
 }
 
-nav li {
-    display: inline-block;
-    list-style: none;
-    padding: 1em; 
+nav ul:nth-of-type(1) {
+  background-color: var(--color-yellow);
 }
 
-nav li a {
-    text-decoration: none;
-    color: var(--color-text-black);
-    font-size: 1em;
+nav ul:nth-of-type(1) li,
+nav ul:nth-of-type(2) li {
+  display: inline-block;
+  list-style: none;
+  padding: 1em;
+  font-weight: 400;
+  font-style: normal;
 }
 
-nav li a:hover {
-    text-decoration: underline;
-    color: var(--color-text-black);
+nav ul:nth-of-type(1) li a,
+nav ul:nth-of-type(2) li a {
+  text-decoration: none;
+  color: var(--color-black);
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+/* Hover effect with line */
+
+
+nav li:hover {
+  /* text-decoration: underline; */
+  /* color: var(--color-black); */
+  transition: color .2s linear;
+  transition-behavior: normal;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+
+nav li a img:nth-of-type(2) {
+  width: 3em;
 }
 
 nav li a img:nth-of-type(3) {
-    width: 1em;
+  width: 1em;
 }
+
+nav ul.toonMenu {
+  display: block;
+}
+
+header button {
+  z-index: 999;
+  position: relative;
+  order: 1;
+}
+
+
+/* Hover effect */
+/* nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease; 
+  transform-origin: right;
+} */
+
+/* nav ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+} */
+
+
+@media all and (max-width: 25em) {
+ main {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  /* height: auto; */
+  /* flex: 0 0 auto; */
+  /* overflow: hidden; */
+  /* background-repeat: no-repeat;  */
+ }
+}
+
+/* Responsive ipv suface plane */
+/* @media () {
+} */
 
 /* Main ----------------------------------*/
 
 main {
-    width: 100%;
-    overflow: scroll;
-    display: flex;
-    overflow-y: hidden;
-    white-space: nowrap; /* Prevent text wrapping to the next line */
-    padding-top: 10em;
+  /* Laatste voortgangsgesprek: Voor een tien kan ik de gradient effect maken */
+  /* https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect */
+  /* https://codepen.io/bakoushin/pen/OperQP */
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: auto;
+  /* white-space: nowrap;  */
+  /* Zodat content op 1 lijn blijft */
+  display: flex;
+  margin: 0em;
+  margin-top: 10em;
+  height: 70vh;
+}
+
+main a {
+  text-decoration: none;
+  /* border: 1px solid #ddd; */
+  /* margin: 20px; */
+  display: inline-block;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+/* eerste section nth(1) ------------------- */
+
+main section:nth-of-type(1),
+main section:nth-of-type(2) {
+  margin: 2em;
+  /* padding: 3em; */
+  flex: 0 0 auto;
+  width: 50%;
+  /*  flexibility without shrinking */
+  /* display: inline-block;  */
+  /* vertical-align: top;  */
+  /* text-wrap: wrap; */
+}
+
+main section:nth-of-type(1) {
+  padding-right: 8em;
+}
+
+main section:nth-of-type(2) {
+  
 }
 
 
-
-main section {
-    max-width: 100%;
-    white-space: normal;
-    top: 6em;
-    height: auto;
-    /* /* display: flex; */
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    display: flex;
-    margin: 0 auto; /* Center the content horizontally */
-    display: inline-block; /* Ensure the section doesn't take the full width */
+main section h2 {
+  font-size: 5.1em;
+  line-height: 1;
+  font-weight: 400;
+  padding: 1em 1em 1em 0;
 }
 
+main section p {
+  font-size: 1.4em;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+main section a {
+  font-weight: 700;
+  font-size: 1.4em;
+  text-decoration: none;
+  color: var(--color-black);
+  display: block;
+  padding: 0.5em 0 0.5em 0;
+}
+
+main section a img {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: 0;
+  /* filter: invert(100%)*/
+  /* float: left; */
+  /* padding-right: 1em; */
+}
+
+main section a:hover {
+  transform: translateX(0.8em);
+  transition: transform 250ms;
+  /* transition: transform 250ms linear; */
+}
+
+/* 4x article kaartjes ------------------- */
+
+main article section {
+  position: absolute;
+  width: 100% !important; 
+  bottom: 2em;
+}
+
+
+main article a {
+  position: absolute;
+  bottom: 1em;
+  color: var(--color-text-white);
+}
+
+/* Kaartjes styling ayeee */
+main article  h3,
+main article  p,
+main article > a  {
+  width: 100%;
+  color: var(--color-white);
+  /* padding: 0 1em 0 1em; */
+  /* bottom: 4em; */
+  /* left: 1em; */
+}
+
+main article h3 {
+  font-size: 1.8em;
+}
+
+main article p {
+  font-size: 1em;
+  bottom: 3em;
+  left: 1.7em;
+}
+
+
+/* Vormgeving */
+main article a:nth-last-of-type(1) {
+  display: flex;
+}
+
+main article a:nth-last-of-type(1) img {
+  filter: invert(100%);
+  max-width: 100%;
+  height: auto;
+
+}
 main article {
-    flex: 0 0 auto; /* Make articles flexible and not shrinkable */
-    min-width: 100%;
-    position: absolute;
-    padding: 1.25rem;
-    display: flex;
-    /* flex-direction: column; */
-    /* justify-content: flex-end; */
-    text-decoration: none;
-    display: inline-block; /* Display articles in a row */
-    vertical-align: top; /* Align articles to the top */
+  display: inline-block;
+  position: relative;
+  margin: 1em;
+  width: 30em;
+  height: auto;
+  flex: 0 0 auto;
+  overflow: hidden;
+  background-repeat: no-repeat; 
 }
 
-main article:nth-last-of-type(2) {
-    border-radius: 1em;
+main article:nth-of-type(1) {
+  filter: brightness(85%);
+  background-image: url("../images/img_1a_dt_impressionisme.png");
+  z-index: -1;
+  border-radius: 1em;
+
+  transition: 1s;
+  color: var(--color-white);
+  /* transition: all 0.3s ease-in-out; */
+}
+
+main article:nth-of-type(1):hover, 
+main article:nth-of-type(2):hover,
+main article:nth-of-type(3):hover,
+main article:nth-of-type(4):hover{
+  /* transform: scale(1.2); */
+  background-size: 150%;
+}
+
+main article:nth-of-type(2) {
+ filter: brightness(85%);
+ background-image: url("../images/img_5a_dt_50_jaar_inspiratie.png");
+ z-index: -1;
+ border-radius: 1em;
+ color: var(--color-white);
+}
+
+main article:nth-of-type(3) {
+  filter: brightness(85%);
+  background-image: url("../images/img_3a_dt_landschap.png");
+  z-index: -1;
+  border-radius: 1em;
+  color: var(--color-white);
+ }
+
+main article:nth-of-type(4) {
+  filter: brightness(85%);
+  background-image: url("../images/img_2a_dt_vincent_van_gogh.png");
+  z-index: -1;
+  border-radius: 1em;
+  color: var(--color-white);
+}
+
+
+/* padding plaatsen tussen het pijltje en tekst in */
+main section:nth-of-type(1) a {
+  width: 100%;
+  bottom: 2;
+  gap: 1em; 
+}
+
+/* 1x section nth(2) ------------------- */
+
+main section:nth-of-type(2) ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+footer section {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
 }

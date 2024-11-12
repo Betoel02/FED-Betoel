@@ -1,33 +1,38 @@
-// JavaScript Document
-console.log("hi");
 
-// var menuButton = document.querySelector("header nav button");
-// var buttonOpen
+var openButton = document.querySelector("header > button");
+var imgButton = document.querySelector("header > button img");
+// afbeelding koppelen aan ("header > button img")
 
-// 45em = 720px
-// const mediaQuery = window.matchMedia('(min-width: 45em)')
+// stap 2: laat de menu-button luisteren naar kliks en voer dan een functie uit
+openButton.onclick = openMenu;
 
-// if (mediaQuery.matches) {
-    // Then trigger an alert
-    // alert('Media Query Matched!')
-    // menuButton.addEventListener("click", openMenu);
-    // } else {
-    // alert('Media Query Not Matched!')    
-    // console.log("test")
+// stap 3: voeg in de functie een class toe aan de nav
+function openMenu() {  
+    console.log("hi")
+  // zoek de nav op
+  var deNav = document.querySelector("nav ul:nth-of-type(1)");
+  // voeg class toe aan nav
+  deNav.classList.toggle("toonMenu");
+
+  if (deNav.classList.contains("toonMenu")){
+    imgButton.src= "../images/close_icon.svg";
+  }
+
+  else {
+    imgButton.src= "../images/menu_icon.svg";
+  }
+}
+
+
+
+// /**********************************/
+// /* bonus: menu sluiten met escape */
+// /**********************************/
+// window.onkeydown = handleKeydown;
+
+// function handleKeydown(event) {
+//   if (event.key == "Escape") {
+//     var deNav = document.querySelector("nav");
+//     deNav.classList.remove("toonMenu");
 //   }
-  
-
-// function openMenu() {
-    // var headerNav = document.querySelector("header nav:first-of-type");
-    // headerNav.classList.add("buttonOpen");
-    /*class zichtbaar bij het open klikken*/
-// }
-
-// var closeButton = document.querySelector("header nav button");
-
-// closeButton.addEventListener("click", sluitMenu);
-
-// function sluitMenu() {
-    // var headerNav = document.querySelector("header nav:first-of-type");
-    // headerNav.classList.remove("buttonOpen");
 // }
