@@ -194,22 +194,9 @@ main a {
   margin: 0;
 }
 
-/* eerste section nth(1) ------------------- */
-
-main section:nth-of-type(1),
-main section:nth-of-type(3) {
-  margin: 2em;
-  /* padding: 3em; */
-  flex: 0 0 auto;
-  width: 50%;
-  /*  flexibility without shrinking */
-  /* display: inline-block;  */
-  /* vertical-align: top;  */
-  /* text-wrap: wrap; */
-}
-
-main section:nth-of-type(1) {
-  padding-right: 8em;
+main section {
+  width: fit-content;
+  height: auto;
 }
 
 main section h2 {
@@ -243,11 +230,21 @@ main section a img {
   /* padding-right: 1em; */
 }
 
-main section a:hover {
-  transform: translateX(0.8em);
-  transition: transform 250ms;
-  /* transition: transform 250ms linear; */
+/* Eerste (1) en laatste (3)  */
+
+main section:nth-of-type(1),
+main section:nth-of-type(3) {
+  margin: 2em;
+  /* padding: 3em; */
+  flex: 0 0 auto;
+  width: 50%;
+  /*  flexibility without shrinking */
+  /* display: inline-block;  */
+  /* vertical-align: top;  */
+  /* text-wrap: wrap; */
 }
+
+
 
 /* 4x article kaartjes ------------------- */
 
@@ -262,12 +259,6 @@ main section:nth-of-type(2) article section {
   bottom: 2em;
 }
 
-
-main section:nth-of-type(2) article a {
-
-  bottom: 1em;
-  color: var(--color-text-white);
-}
 
 /* Kaartjes styling ayeee */
 main section:nth-of-type(3) article h3,
@@ -291,26 +282,50 @@ main section:nth-of-type(2)  article p {
 }
 
 
-/* Vormgeving */
-main section:nth-of-type(2)  article a:nth-last-of-type(1) {
-  display: flex;
-}
-
 main section:nth-of-type(2)  article a:nth-last-of-type(1) img {
   filter: invert(100%);
   max-width: 100%;
   height: auto;
-
 }
+
+
 main section:nth-of-type(2) article {
   display: inline-block;
   position: relative;
-  margin: 1em;
-  width: 30em;
+  width: 30vh;
   height: auto;
+  
   flex: 0 0 auto;
   overflow: hidden;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  filter: brightness(85%);
+  z-index: 1;
+  border-radius: 1em;
+  color: var(--color-white);
+  padding: 2em;
+  
+  background-size: cover;
+  margin: 1em;
+  width: 30%;
+   height: 100%;
+}
+
+
+main section:nth-of-type(2) article a {
+  /* position: relative; */
+  bottom: 1em;
+  color: var(--color-text-white);
+  outline: solid blue;
+}
+
+main section:nth-of-type(2) article a::after {
+  content:'';
+  position: absolute;
+  inset: 0;
+
+  /* background-color: orange; samen met de position relative test demo - christopher*/
 }
 
 main section:nth-of-type(2) article:nth-of-type(1) {
@@ -332,19 +347,6 @@ main section:nth-of-type(2) article:nth-of-type(3) {
 
 main section:nth-of-type(2) article:nth-of-type(4) {
   background-image: url("../images/img_2a_dt_vincent_van_gogh.png");
-}
-
-main section:nth-of-type(2) article {
-  filter: brightness(85%);
-  z-index: -1;
-  border-radius: 1em;
-  color: var(--color-white);
-  padding: 2em;
-
-  background-position: center;
-  background-size: cover;
-   width: 30%;
-   height: 100%;
 }
 
 /* christopher 
