@@ -314,19 +314,7 @@ main section:nth-of-type(2) article {
 }
 
 main section:nth-of-type(2) article:nth-of-type(1) {
-  filter: brightness(85%);
   background-image: url("../images/img_1a_dt_impressionisme.png");
-  z-index: -1;
-  border-radius: 1em;
-  padding: 2em;
-  transition: 1s;
-  color: var(--color-white);
-  /* transition: all 0.3s ease-in-out; */
-
-  background-position: center;
-  background-size: cover;
-   width: 30%; /* dit was voorheen 100%  */
-   height: 100%;
 }
 
 main section:nth-of-type(2) article:hover {
@@ -335,36 +323,19 @@ main section:nth-of-type(2) article:hover {
 }
 
 main section:nth-of-type(2) article:nth-of-type(2) {
- filter: brightness(85%);
  background-image: url("../images/img_5a_dt_50_jaar_inspiratie.png");
- z-index: -1;
- border-radius: 1em;
- color: var(--color-white);
- padding: 2em;
-
- background-position: center;
- background-size: cover;
-  width: 30%; /* dit was voorheen 100%  */
-  height: 100%;
 }
 
 main section:nth-of-type(2) article:nth-of-type(3) {
-  filter: brightness(85%);
   background-image: url("../images/img_3a_dt_landschap.png");
-  z-index: -1;
-  border-radius: 1em;
-  color: var(--color-white);
-  padding: 2em;
-
-  background-position: center;
-  background-size: cover;
-   width: 30%; /* dit was voorheen 100%  */
-   height: 100%;
  }
 
 main section:nth-of-type(2) article:nth-of-type(4) {
-  filter: brightness(85%);
   background-image: url("../images/img_2a_dt_vincent_van_gogh.png");
+}
+
+main section:nth-of-type(2) article {
+  filter: brightness(85%);
   z-index: -1;
   border-radius: 1em;
   color: var(--color-white);
