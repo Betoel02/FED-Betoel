@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Betoel Fadallah
 
   #### Je startniveau:
-  Mix van alle pisten (kon kiezen uit zwart, rood óf blauw)
+  Blauw/ rood (kon kiezen uit zwart, rood óf blauw)
 
   #### Je focus:
   Responsive ivm horizontale scroll. (kies uit responsive óf surface plane)
@@ -42,7 +42,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Van Gogh homepage: 
-  <img src="readme-images/1a_homepagina_van_gogh_museum.png.png" width="375px" alt="Website eerste opzichte horizontale scroll">
+  <img src="readme-images/1a_homepagina_van_gogh_museum.png" width="375px" alt="Website eerste opzichte horizontale scroll">
   <img src="readme-images/2a_homepagina_van_gogh_museum.png" width="375px" alt="Zichtbare gradient effect van horizontale scroll">
   <img src="readme-images/3a_homepagina_van_gogh_museum.png" width="375px" alt="Laaste gradient effect en einde homepage">
 
@@ -85,7 +85,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-## Voortgang 1 (week 2) - donderdag 30/11/2023
+## Voortgang 1 (week 2) - dinsdag 26/11/2023 (vervroegde voortgangsgesprek/ feedback)
 
 <details>
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
@@ -93,9 +93,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-  Samen met studentassistent zijn we in de les van 30 november de 'Breakdown' opdracht gaan doornemen. Daarbij gaf hij aan om de in de header de dubbele navbar op te nemen. 
+  <img src="readme-images/1c_voortgangsgesprek_.png" width="375px" alt="breakdown van de hele pagina before">
+
+  Samen met 2 studentassistenten Sybren Loos en Christopher Willems zijn we in de les van 26 november de 'Breakdown' opdracht gaan doornemen. We zijn de Html structuur na gegaan of alles logisch was opgebouwd en kwamen tot een nieuwe iteratie slag. Namelijk de Homepage main bestaat uit 3 delen zou je kunnen zeggen: 1 (hoofd)section, 4 articles, 1 (eind)section. Na wat sparren is er besloten om de 4 articles in 1 section de doen.
   
-  <img src="readme-images/1c_voortgangsgesprek_.png" width="375px" alt="breakdown van de hele pagina">
+  Met Marten heb ik het er over gehad om de dubbele navbar in de header in een hamburger menu te stoppen voor als ik de responsive opdracht wil gaan doen zodat ik aan de beoordelingseisen kan voldoen door gebruik te maken van javascript.
+
+  <img src="readme-images/1c_voortgangsgesprek_.png" width="375px" alt="breakdown van de hele pagina before">
 
   Zelf twijfelde ik wat handig was over de opdeling hiervan, dus dit bracht mij tot een nieuwe inzicht. Daarnaast gaf hij aan dat mijn breakdown er prima uitzag en keken we verder naar de opdeling van de code en hoe de site als basis aangepakt kan worden. Voor op de home pagina had ik een aantal vragen over de uitdaging van de horizontale scroll effect. Ik dacht eerst aan het begin dat het verstandig was om de scroll effect als carrousel te zien, echt vond ik het idee om de de kaartjes beter in een list te stoppen, logischer. Dus heb ik mijn vraag voorgelegd aan hem, waarna hij het volgende op antwoordde: "Om eerst de horizontale scroll effect aan te pakken kun je het volgde regel toepassen":
   
