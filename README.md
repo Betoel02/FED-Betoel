@@ -41,15 +41,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Van Gogh homepage: 
+  Van Gogh homepagina: 
   <img src="readme-images/1a_homepagina_van_gogh_museum.png" width="375px" alt="Website eerste opzichte horizontale scroll">
+
   <img src="readme-images/2a_homepagina_van_gogh_museum.png" width="375px" alt="Zichtbare gradient effect van horizontale scroll">
+
   <img src="readme-images/3a_homepagina_van_gogh_museum.png" width="375px" alt="Laaste gradient effect en einde homepage">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Shop pagina 
   <img src="readme-images/1b_shop_page_van_gogh_museum.png" width="375px" alt="Gehele verticale scroll pagina">
-  De shop pagina is wel anders dan de home, deze is weer verticaal mogelijk om te scrollen.
+  
+  De shop pagina is wel anders dan de home, Home pagina is horizontale scroll en shop pagina is verticall scrollen, vandaar dat ik de css file zal scheiden.
  
 </details>
 
@@ -62,6 +65,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - De website is niet responsief, de website is niet aangepast aan verschillende 
 
 </details>
 
@@ -72,14 +76,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-  ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
-
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### beide pagina's: 
+  <img src="readme-images/breakdownsheet_wk1.png" width="1200px" alt="Breakdownsheet">
 
 </details>
 
