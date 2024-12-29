@@ -25,17 +25,17 @@
 /* @media (min-with: 45em) {} */
 
 /* Door Sanne 't hooft aanbevolen! ivm screenreader*/
-body h1 {
-  display: none;
-}
 
 body {
   background-color: var(--color-yellow);
   transition: background-color 6s linear;
   font-family: var(--font-nunito);
-  font-size: 1rem;
-  line-height: 1.375;
+  /* font-size: 1rem; */
+  /* line-height: 1.375; */
+}
 
+h1 {
+  display: none;
 }
 
 /* Header ---------------------------------- */
@@ -120,7 +120,6 @@ nav li a img:nth-of-type(3) {
 
 nav ul.toonMenu {
   display: block;
-
 }
 
 header button {
@@ -172,8 +171,8 @@ main {
   /* https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect */
   /* https://codepen.io/bakoushin/pen/OperQP */
   width: 100%;
+  overflow-y: visible;
   overflow-x: scroll;
-  overflow-y: auto;
   /* white-space: nowrap;  */
   /* Zodat content op 1 lijn blijft */
   display: flex;
@@ -198,19 +197,20 @@ main section {
 }
 
 main section h2 {
-  font-size: 5.1em;
+  font-size: clamp(3rem, 5vw, 6rem); 
   line-height: 1;
   font-weight: 400;
   padding: 1em 1em 1em 0;
 }
 
 main section p {
-  font-size: 1.4em;
+  font-size: clamp(1.2rem, 1.4vw, 3rem); 
   line-height: 1.6;
   font-weight: 400;
 }
 
 main section a {
+  font-size: clamp(1.2rem, 1.4vw, 3rem); 
   font-weight: 700;
   font-size: 1.4em;
   text-decoration: none;
@@ -219,6 +219,7 @@ main section a {
   padding: 0.5em 0 0.5em 0;
 }
 
+/* Pijltje */
 main section a img {
   display: inline-block;
   margin-right: auto;
@@ -251,11 +252,33 @@ main section:nth-of-type(2) {
   display: flex;
 }
 
-main section:nth-of-type(2) article section {
+main section:nth-of-type(2) article {
+  display: inline-block;
+  position: relative;
+  width: 30rem;
+  height: auto;
+  
+  flex: 0 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  filter: brightness(85%);
+  z-index: 1;
+  border-radius: 1em;
+  color: var(--color-white);
+  padding: 2em;
+  
+  background-size: cover;
+  margin: 1em;
+  /* width: 30%; */
+   height: 100%;
+}
+
+/* main section:nth-of-type(2) article section {
   position: absolute;
   width: 100% !important; 
   bottom: 2em;
-}
+} */
 
 
 /* Kaartjes styling ayeee */
@@ -269,6 +292,8 @@ main section:nth-of-type(3)  article > a  {
   /* left: 1em; */
 }
 
+main
+
 main section:nth-of-type(2)  article h3 {
   font-size: 1.8em;
 }
@@ -280,35 +305,13 @@ main section:nth-of-type(2)  article p {
 }
 
 
-main section:nth-of-type(2)  article a:nth-last-of-type(1) img {
+main section:nth-of-type(2) article a:nth-last-of-type(1) img {
   filter: invert(100%);
   max-width: 100%;
   height: auto;
 }
 
 
-main section:nth-of-type(2) article {
-  display: inline-block;
-  position: relative;
-  width: 30vh;
-  height: auto;
-  
-  flex: 0 0 auto;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-position: center;
-  
-  filter: brightness(85%);
-  z-index: 1;
-  border-radius: 1em;
-  color: var(--color-white);
-  padding: 2em;
-  
-  background-size: cover;
-  margin: 1em;
-  width: 30%;
-   height: 100%;
-}
 
 
 main section:nth-of-type(2) article a {

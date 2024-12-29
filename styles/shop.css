@@ -10,6 +10,7 @@
     /* startje */
     --color-black: #111;
     --color-white: #fff;
+    --color-white-10: rgba(255, 255, 255, 0.8);
     --color-yellow: #FFCE01;
     --color-blue: #0099d9;
     --color-light-blue: #F4F6FC;
@@ -24,104 +25,272 @@ body {
     font-family: var(--font-nunito);
     font-size: 1rem;
     /* line-height: 1.375; */
+    width: 100%;
+    position: relative;
 }
 
 /* Header ---------------------------------- */
 
-nav {
+header {
+    padding: 0;
+}
+
+header nav {
+    gap: 1rem;
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
+    /* position: fixed; */
     background-color: var(--color-yellow);
+    /* top: 0; */
+    /* left: 0; */
+    z-index: 2;
+    /* background-color: var(--color-yellow); */
 }
 
-nav ul{
-    padding: 2em 1em 1em 1em;
+header nav ul{
     display: flex;
-    justify-content: space-evenly; 
-}
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 0em 2em 1em 1em;
+}    
 
-nav li {
-    display: inline-block;
+    /* padding: 2em 1em 1em 1em; */
+    /* display: flex; */
+    /* justify-content: space-evenly;  */
+
+header nav ul li {
     list-style: none;
     padding: 1em; 
     font-weight: 400;
     font-style: normal;
 }
 
-nav li a {
+header nav ul li:nth-of-type(1) {
+    display: inline-block;
+}
+
+header nav ul li a {
+    /* display: inline-block; */
     text-decoration: none;
     list-style: none;
+     
     color: var(--color-black);
     font-size: 1.3em;
     font-weight: 600;
 }
-
-nav ul:nth-of-type(2){
-    padding: 0em 2em 1em 1em;
-    display: flex;
-    justify-content: space-evenly; 
-  }
-
-/* Main ---------------------------------- */
-
-main {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr;
-    grid-gap: 1em;
-    width: 10vw;
-    margin: 0;
+        
+header nav ul a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--color-black);
+    transition: width 0.3s;
 }
-  
-main {
-    width: 80%;
-    padding-top: 1em 0em 1em 0em;
-    background-color: #f76564;
+
+header nav ul a:hover::after {
+    width: 100%;
 }
+
+
+/* Header cover */
+/* header section img {
+    width: 100%;
+    position: relative;
+
+
+    display: inline-block;
+    text-align: center;
+}
+
+header section h2 {
+    position: absolute;
+    font-size: 2.5em;
+}
+
+header section p {
+    position: absolute;
+    font-size: 1.5em;
+} */
+
+
+
+/* Zorg dat de section een positionering context heeft */
+header section {
+    position: relative;
+}
+
+header section img {
+    width: 100%; 
+    height: auto; 
+    display: block; /* Verwijder eventuele inline-element marges */
+}
+
+/* H2 styling */
+header section h2 {
+    position: absolute;
+    top: 50%; 
+    left: 10%; 
+    font-size: 2.5em;
+    color: var(--color-white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* P styling (als je p-element gebruikt) */
+header section a {
+    position: absolute;
+    top: 60%; 
+    left: 10%; 
+    /* transform: translate(-50%, -50%);  */
+    font-size: 1.5em;
+    color: white; 
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.75); 
+    text-decoration: none;
+}
+
+/* Textuhhhhh selectorrrrs */
+
 h2 {
     font-size: 2em;
     font-weight: 600;
     padding-bottom: .4em;
 }
 
+
+
+
+/* Main ---------------------------------- */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    /* column-gap: 1em; */
+    grid-gap: 1em;
+    margin: 0;
+    width: 100%;
+    padding: 2em 3em 2em 3em;
+    /* overflow: hidden; */
+}
+
+
+main section:nth-of-type(2),
+main section:nth-of-type(3),
+main section:nth-of-type(4) {
+    padding: 1em;
+}
+
 main section:nth-of-type(1) {
-    object-fit: cover;
+    grid-column: 2/3;
+    background-color: aqua;
+    position: relative;
 }
 
-main section:nth-last-of-type(1) {
-    margin: 1em;
-    width: 100vw;
-}
-
-main article img{
+main section:nth-of-type(1) img {
     width: 30%;
 }
 
 main section ul {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    width: 20%;
-    gap: 1em;
     list-style-type: none;
 }
 
-main figure img {
-    width: 30%;
+
+
+/*  ----------------------- */
+/* section:nth-of-type (1) */
+/*  ----------------------- */
+
+/* section 1 */
+
+main section figure:nth-of-type(1) {
     position: relative;
+    display: inline-block; 
+    width: 100%;
 }
 
-main figure p {
-    position: absolute;
-    top:4em;
-    right: 1em;
+main section figure:nth-of-type(1) img {
+    display: block;
+    width: 100%;
 }
-/* 
-main > ul:nth-of-type(1) {
-} */
+
+main section figure figcaption {
+    position: absolute;
+    bottom: 1em;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--color-black); 
+    padding: 0.5em; 
+    font-size: 1em;
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+main section:nth-of-type(1) h2 {
+  font-size: 2.5em;
+}
+
+main section:nth-of-type(1) ul {
+    display: flex;
+    flex-direction: row;  
+}
+
+main section div {
+    display: flex;
+}
+
+
+
+
+/*  ----------------------- */
+/* section:nth-of-type (2) */
+/*  ----------------------- */
+
+main section:nth-of-type(2) {
+    grid-column: 2/3;
+    background-color: rgb(0, 255, 68);  
+}
+
+main section:nth-of-type(2) ul {
+    display: flex;
+}
+
+main section:nth-of-type(2) img {
+    width: 200px;
+    height: 200px ;
+}
+
+
+/*  ----------------------- */
+/* section:nth-of-type (3) */
+/*  ----------------------- */
+
+main section:nth-of-type(3) {
+        grid-column: 2/3;
+    background-color: rgb(0, 255, 68);
+}
+
+main section:nth-of-type(3) img {
+    width: 35%;
+}
+
+
+/*  ----------------------- */
+/* section:nth-of-type (4) */
+/*  ----------------------- */
+
+main section:nth-of-type(4) {
+    grid-column: 1/2;
+    grid-row: 1;
+    background-color: rgb(255, 187, 0);
+}
+
+main section:nth-of-type(4) img {
+    width: 35%;
+}
+
+
+
+
 
 /* Footer ---------------------------------- */
 
@@ -152,6 +321,11 @@ footer section:nth-of-type(2) {
     justify-content: space-between;
     background-color: var(--color-light-blue);
     border-top: 1px solid var(--color-dark-gray);
+}
+
+footer section:nth-of-type(2) img {
+   height: 100%;
+   padding: 1em;
 }
 
 footer ul {
