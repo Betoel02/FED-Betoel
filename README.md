@@ -95,7 +95,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Samen met 2 studentassistenten Sybren Loos en Christopher Willems zijn we in de les van 26 november de 'Breakdown' opdracht gaan doornemen. We zijn de Html structuur na gegaan of alles logisch was opgebouwd en kwamen tot een nieuwe iteratie slag. Namelijk de Homepage main bestaat uit 3 delen zou je kunnen zeggen: 1 (hoofd)section, 4 articles, 1 (eind)section. Na wat sparren is er besloten om de 4 articles in 1 section de doen.
   
-  Met Marten heb ik het er over gehad om de dubbele navbar in de header in een hamburger menu te stoppen voor als ik de responsive opdracht wil gaan doen zodat ik aan de beoordelingseisen kan voldoen door gebruik te maken van javascript.
+  Met Marten heb ik het er over gehad om de dubbele navbar in de header in een hamburger menu te stoppen voor als ik de responsive opdracht wil gaan doen zodat ik aan de beoordelingseisen kan voldoen door gebruik te maken van javascript. Want op de oorspronkelijke site is er geen hamburger menu tenzij je overschakeld naar kleinere scherm, dan is de hamburger menu zichtbaar.
 
   <img src="readme-images/1c_voortgangsgesprek_.png" width="375px" alt="breakdown van de hele pagina before">
 
@@ -110,26 +110,38 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Ik heb deze regel toepgepast in mijn code nadat ik thuis aankwam, echter is het mij niet gelukt om deze werkend te krijgen. Morgen zal ik dit opnieuw proberen.
 
-  Andere vraag die ik had over de Home page scroll effect was de kleur overgang van: geel- oranje naar paars. Hij gaf aan dat ik dit kon doen door vanaf een X aantal px breedte van het scherm, de kleur overgang geleidelijk kan laten overzetten naar een ander kleur. Dit kon ik beter later toepassen zei hij aangezien het voor nu niet heel dringend is voor de site.
+  Andere vraag die ik had over de Home page scroll effect was de kleur overgang van: geel- oranje naar paars. Hij gaf aan dat ik dit kon doen door vanaf een X aantal px breedte van het scherm, de kleur overgang geleidelijk kan laten overzetten naar een ander kleur. Dit kon ik beter later toepassen voor als ik een 10 wilde gaan, aangezien het een lastigere uitdaging is en met javascript alleen gedaan kon worden door breakpoint te definieren op de pagina.
 
-  Ook zijn we gaan kijken naar de tweede Shop pagina, hij vond het  een goed idee dat ik de hele pagina omzet naar een Grid aangezien er veel gebeurd op de Van Gogh site en deze nog redelijk rommelig oogt. Hierin zag hij kansen om het mooier en professioneler te maken, daarbij kan een Grid veel impact leveren. 
+  Ten slotte waren we gaan kijken naar de tweede Shop pagina, Christopher en Danny vond het een goed idee dat ik de hele pagina omzet naar een Grid waarbij ik 2 kolommen aan maak voor als basis. Wat ik wel tijdens de feedback gesprek heb aangepast was de banner, deze had ik voorheen in een section gedaan in de main, wat uiteindelijk heb aangepast naar een header. Zo kan er over de algehele main een grid ingezet worden. 
   
+  Samen met een klasgenoot hebben we elkaars site geanalyseerd door de WCAG checklist bij na te gaan of de huidige site hier aan voldoet. Dit heb ik voor hem ook door de validator laten gaan om na te kijken of er ook andere bevindingen zijn uitgekomen. De checklist van mijn site is door Willem ingevuld, zie bijgevoegd foto's. Die van hem heeft hij ontvangen.
+
+  <img src="readme-images/FED WCAG Checklist/CL_V1_IMG_7934.png" width="375px" alt="WCAG formulier pagina 1">
+  
+  <img src="readme-images/FED WCAG Checklist/CL_V1_IMG_7935.png" width="375px" alt="WCAG formulier pagina 2">
+
+  <img src="readme-images/FED WCAG Checklist/CL_V1_IMG_7936.png" width="375px" alt="WCAG formulier pagina 3">
+
+  <img src="readme-images/FED WCAG Checklist/CL_V1_IMG_7937.png" width="375px" alt="WCAG formulier pagina 4">
+
+  <img src="readme-images/FED WCAG Checklist/CL_V1_IMG_7938.png" width="375px" alt="WCAG formulier pagina 5">
+
+  <img src="readme-images/FED WCAG Checklist/CL_V1_IMG_7939.png" width="375px" alt="WCAG formulier pagina 6">
 
   ### Verslag van meeting, hoofdlijnen in het kort:
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - Breakdown sheet besproken (navbar fix).
   - Horizontale scroll effect= overflow-x: scroll;
-  - Gradient break is verbonden aan X aantal px, hierover meer in een latere fase.
-  - Grid kan ik goed toepassen op mijn tweede Shop pagina. 
+  - Gradient break is verbonden aan X aantal px, dit is alleen een bonus voor de surface plane.
+  - Grid kan ik prima toepassen op mijn tweede Shop pagina in plaats van een aside. 
 
 </details>
 
 
 
 
-
-## Voortgang 2 (week 3)
+## Voortgang 2 (week 3) 10 december
 
 <details>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
@@ -137,15 +149,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Samen met Sybren en Christopher zijn we gaan kijken naar de 
 
 
   ### Verslag van meeting
@@ -232,7 +236,7 @@ Donderdag 11 januari was de laatste voortgangsgesprek. Daarvoor wilde ik
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitkomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
