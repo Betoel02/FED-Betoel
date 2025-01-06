@@ -93,29 +93,6 @@ header nav ul a:hover::after {
     width: 100%;
 }
 
-
-/* Header cover */
-/* header section img {
-    width: 100%;
-    position: relative;
-
-
-    display: inline-block;
-    text-align: center;
-}
-
-header section h2 {
-    position: absolute;
-    font-size: 2.5em;
-}
-
-header section p {
-    position: absolute;
-    font-size: 1.5em;
-} */
-
-
-
 /* Zorg dat de section een positionering context heeft */
 header section {
     position: relative;
@@ -127,7 +104,6 @@ header section img {
     display: block; /* Verwijder eventuele inline-element marges */
 }
 
-/* H2 styling */
 header section h2 {
     position: absolute;
     top: 50%; 
@@ -151,14 +127,32 @@ header section a {
 
 /* Textuhhhhh selectorrrrs */
 
-h2 {
-    font-size: 2em;
+main h2 {
+    font-size: 2.5em;
     font-weight: 600;
     padding-bottom: .4em;
+    padding-top: .5em;
 }
 
+main p {
+    font-size: 1.4em;
+    font-weight: 400;
+}
 
+main section figure figcaption {
+    position: absolute;
+    bottom: 1em;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--color-black); 
+    padding: 0.5em; 
+    font-size: 1.4em;
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+}
 
+main section a {
+    font-size: 1.2em;
+}
 
 /* Main ---------------------------------- */
 
@@ -218,21 +212,6 @@ main section figure:nth-of-type(1) img {
     width: 100%;
 }
 
-main section figure figcaption {
-    position: absolute;
-    bottom: 1em;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: var(--color-black); 
-    padding: 0.5em; 
-    font-size: 1em;
-    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
-}
-
-main section:nth-of-type(1) h2,
-main section:nth-of-type(2) h2 {
-  font-size: 2.5em;
-}
 
 main section:nth-of-type(1) ul,
 main section:nth-of-type(2) ul {
@@ -326,21 +305,18 @@ main section:nth-of-type(4) ul li:nth-of-type(1),
 main section:nth-of-type(4) ul li:nth-of-type(3),
 main section:nth-of-type(4) ul li:nth-of-type(5) {
     background-color: var(--color-blue);
-    padding: 2em;
+    padding: 2em 2em 3em 2em;
 }
 
 main section:nth-of-type(4) ul li:nth-of-type(2),
 main section:nth-of-type(4) ul li:nth-of-type(4) {
     background-color: var(--color-yellow);
-    padding: 2em;
+    padding: 2em 2em 3em 2em;
 }
 
 main section:nth-of-type(4) img {
     width: 100%;
 }
-
-
-
 
 
 /* Footer ---------------------------------- */
