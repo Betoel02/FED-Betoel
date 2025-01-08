@@ -10,7 +10,7 @@ openButton.onclick = openMenu;
 function openMenu() {  
     console.log("hi")
   // zoek de nav op
-  var deNav = document.querySelector("nav ul:nth-of-type(1)");
+  var deNav = document.querySelector("nav ul");
   // voeg class toe aan nav
   deNav.classList.toggle("toonMenu");
 

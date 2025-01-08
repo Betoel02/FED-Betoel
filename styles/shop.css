@@ -113,7 +113,6 @@ header section h2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* P styling (als je p-element gebruikt) */
 header section a {
     position: absolute;
     top: 60%; 
@@ -168,12 +167,13 @@ main {
     width: 100%;
     padding: 2em 3em 2em 3em;
     /* overflow: hidden; */
+
 }
 
-main section:nth-of-type(1),
-main section:nth-of-type(2),
-main section:nth-of-type(3),
-main section:nth-of-type(4) {
+main > section:nth-of-type(1),
+main > section:nth-of-type(2),
+main > section:nth-of-type(3),
+main > section:nth-of-type(4) {
     padding: 1em;
 }
 
@@ -196,9 +196,21 @@ main section ul {
 
 /* section 1 */
 
-main section div figure {
+/* main > section > section:nth-of-type() figure,  */
+main > section > section:nth-of-type(1),
+main > section > section:nth-of-type(2){
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
+    /* background-color: red !important; */
+    gap: 1em;
+    padding: 3em 0 0 0;
+    /* display: none; */
+}
+main > section > section:nth-of-type(1) figure,
+main > section > section:nth-of-type(2) figure{
+   width: 100%;
+    /* display: none; */
 }
 
 main section figure:nth-of-type(1) {
@@ -226,9 +238,6 @@ main section:nth-of-type(2) li {
     width: 25%;
 }
 
-/*  */
-/* Figure */
-/*  */
 
 main section figure:nth-of-type(2),
 main section figure:nth-of-type(3) {
@@ -242,20 +251,28 @@ main section figure:nth-of-type(3) img{
 }
 
 
+
 main section article:nth-of-type(1) {
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
+
+
 main section article:nth-of-type(1) video {
-    width: 50%;
+    width: 100%;
+    grid-column:2/3;
+    grid-row: 1/2;
+}
+main section article:nth-of-type(1) > section{
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 /* moleskine & BE@RBRICK - button styling is in section 4 gecascade */
-
-/*  ----------------------- */
-/* section:nth-of-type (2) */
-/*  ----------------------- */
-
 
 /*  ----------------------- */
 /* section:nth-of-type (3) */
@@ -280,6 +297,8 @@ main section:nth-of-type(4) {
     grid-column: 1/2;
     grid-row: 1;
     row-gap: 1em;
+    /* max-width: 500px; */
+    /* min-width: 300px; */
 }
 
 main section:nth-of-type(4) ul {
