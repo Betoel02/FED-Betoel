@@ -163,7 +163,6 @@ header button {
 }
 
 @media screen and (max-width: 1100px) {
-
   nav {
     position: relative;
     overflow: hidden;
@@ -189,8 +188,6 @@ header button {
   header button {
     display: block;
   }
-
-
 }
 
 header nav a:nth-of-type(1),
