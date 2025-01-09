@@ -21,11 +21,6 @@
     }
 } */
 
-/* 78em = 1250px */
-/* @media (min-with: 45em) {} */
-
-/* Door Sanne 't hooft aanbevolen! ivm screenreader*/
-
 body {
   background-color: var(--color-yellow);
   transition: background-color 6s linear;
@@ -34,8 +29,17 @@ body {
   /* line-height: 1.375; */
 }
 
+/* Door Sanne 't hooft aanbevolen! ivm screenreader*/
 h1 {
   display: none;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion */
+@media (prefers-reduced-motion:reduce) {
+  * {
+      animation: none;
+      transition: none;
+  }
 }
 
 /* Header ---------------------------------- */
@@ -59,7 +63,7 @@ header nav {
   left: 0;
   padding: 2em 2em 1em 1em;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   /* z-index: 2; */
   /* background-color: var(--color-background-yellow); */
 }
@@ -90,18 +94,31 @@ header nav ul li a {
   width: fit-content;
 }
 
+header nav ul a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--color-black);
+  transition: width 0.3s;
+}
+
+header nav ul a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--color-black);
+  transition: width 0.3s;
+}
+
+header nav ul a:hover::after {
+  width: 100%;
+}
+
+
 /* Hover effect with line */
 
-
-header nav li:hover {
-  /* text-decoration: underline; */
-  /* color: var(--color-black); */
-  transition: color .2s linear;
-  transition-behavior: normal;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
-  transition-delay: 0s;
-}
 
 header nav a:nth-of-type(1) img {
   width: 1.6em;
@@ -166,7 +183,7 @@ header button {
 
   nav ul {
     position: absolute;
-    translate: 100%;
+    translate: 200%;
   }
 
   header button {
@@ -182,40 +199,6 @@ header nav a:nth-of-type(2) {
   justify-items: flex-end;
 }
 
-/* Hover effect */
-/* nav ul li a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transform: scaleX(0);
-  transition: transform 0.3s ease; 
-  transform-origin: right;
-} */
-
-/* nav ul li a:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-} */
-
-
-@media all and (max-width: 500px) {
- main section {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  
-  /* height: auto; */
-  /* flex: 0 0 auto; */
-  /* overflow: hidden; */
-  /* background-repeat: no-repeat;  */
- }
-}
-
-/* Responsive ipv suface plane */
-/* @media () {
-} */
 
 /* Main ----------------------------------*/
 
@@ -243,6 +226,10 @@ main a {
   margin: 0;
 }
 
+main a:hover {
+  left: 1em;
+}
+
 main section {
   width: fit-content;
   height: auto;
@@ -259,6 +246,7 @@ main section p {
   font-size: clamp(1.2rem, 1.4vw, 3rem); 
   line-height: 1.6;
   font-weight: 400;
+  padding-bottom: 1.5em;
 }
 
 main section a {
@@ -302,7 +290,19 @@ main section:nth-of-type(3) {
 main section:nth-of-type(2) {
   /* display: block; */
   display: flex;
+  animation: 3s linear 1s slidein;
 }
+
+@keyframes slide-in {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%) 2s;
+  }
+}
+
 
 main section:nth-of-type(2) article {
   display: inline-block;
@@ -386,7 +386,7 @@ main section:nth-of-type(2) article:nth-of-type(1) {
 main section:nth-of-type(2) article:hover {
   /* transform: scale(1.2); */
   background-size: 120%;
-  transition-duration: 1s;
+  transition-duration: 2s ease-out;
 }
 
 main section:nth-of-type(2) article:nth-of-type(2) {
