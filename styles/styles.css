@@ -52,48 +52,42 @@ header button {
   display: none;
 }
 
-
 header nav {
   width: 100%;
   /* position: fixed; */
   top: 0;
   left: 0;
+  padding: 2em 2em 1em 1em;
+  display: flex;
+  justify-content: space-evenly;
   /* z-index: 2; */
   /* background-color: var(--color-background-yellow); */
 }
 
-header nav:nth-of-type(1) {
-  padding: 2em 2em 1em 1em;
+header nav ul {
   display: flex;
-  justify-content: space-evenly;
-  /* display: none; */
+  justify-content: space-around;
+  padding: 1em;
 }
-
 
 header nav ul li {
   display: inline-flex;
+  text-wrap: none;
   justify-content: space-around;
   list-style: none;
   padding: 1em;
   font-weight: 400;
   font-style: normal;
+  width: fit-content;
 }
 
-header nav ul:nth-of-type(2) {
-  display: flex;
-  justify-content: space-around;
-  padding: 1em;
-}
 
 header nav ul li a {
   text-decoration: none;
   color: var(--color-black);
   font-size: 1.3em;
   font-weight: 600;
-}
-
-header nav li {
-
+  width: fit-content;
 }
 
 /* Hover effect with line */
@@ -226,7 +220,7 @@ header nav a:nth-of-type(2) {
 /* Main ----------------------------------*/
 
 main {
-  /* Laatste voortgangsgesprek: Voor een tien kan ik de gradient effect maken */
+  /* Laatste voortgangsgesprek: Voor richting een tien kan ik de gradient effect maken */
   /* https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect */
   /* https://codepen.io/bakoushin/pen/OperQP */
   width: 100%;

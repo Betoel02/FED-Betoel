@@ -136,6 +136,7 @@ main h2 {
 main p {
     font-size: 1.4em;
     font-weight: 400;
+    padding-bottom: 2em;
 }
 
 main section figure figcaption {
@@ -180,7 +181,6 @@ main > section:nth-of-type(4) {
 main section:nth-of-type(1),
 main section:nth-of-type(2)  {
     grid-column: 2/3;
-    background-color: aqua;
     position: relative;
 }
 
@@ -204,7 +204,7 @@ main > section > section:nth-of-type(2){
     width: 100%;
     /* background-color: red !important; */
     gap: 1em;
-    padding: 3em 0 0 0;
+    padding: 2em 0 2em 0;
     /* display: none; */
 }
 main > section > section:nth-of-type(1) figure,
@@ -250,26 +250,24 @@ main section figure:nth-of-type(3) img{
     max-height: 100%;
 }
 
-
-
 main section article:nth-of-type(1) {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    background-color: var(--color-yellow);
 }
-
-
 
 main section article:nth-of-type(1) video {
     width: 100%;
     grid-column:2/3;
     grid-row: 1/2;
 }
-main section article:nth-of-type(1) > section{
+main section article:nth-of-type(1) > section {
     width: 100%;
     grid-column: 1/2;
     grid-row: 1/2;
+    padding: 2em;
 }
 
 /* moleskine & BE@RBRICK - button styling is in section 4 gecascade */
@@ -307,11 +305,8 @@ main section:nth-of-type(4) ul {
     gap: 1em;
 }
 
-main section:nth-of-type(4) ul li p,
-main section:nth-of-type(4) ul li img {
-    padding-bottom: 2em;
-}
 
+main section article:nth-of-type(1) > section a,
 main section:nth-of-type(4) ul a {
     text-decoration: none;
     background-color: var(--color-black);
@@ -389,3 +384,15 @@ footer ul li {
 footer ul li img {
     width: 100%;
 }
+
+
+
+
+@media screen and (max-width:500px) {
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  
+  }
