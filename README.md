@@ -68,6 +68,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - De website is wel responsive maar heeft wel een aantal zwaktes zoals op de shop pagina waar het minder goed mee schaalt.
   - Met voice over leest de site op de home wel alle linkjes op de 'heading' na van section 1 en section 3. Daarnaast leest het systeem ook andere teksten in het zelfde link wat geselecteerd. Deze teksten voegen inhoudelijk geen waarde toe en hadden niet hoeven uitgesproken te worden. Waarschijnlijk zijn de alt-teksten niet goed ingevuld.
 
+
+  <img src="readme-images/FED WCAG Checklist/CL_V1_IMG_7934.png" width="375px" alt="WCAG formulier pagina 1">
+  
+  <img src="readme-images/FED WCAG Checklist/CL_V1_IMG_7935.png" width="375px" alt="WCAG formulier pagina 2">
+
+  <img src="readme-images/FED WCAG Checklist/CL_V1_IMG_7936.png" width="375px" alt="WCAG formulier pagina 3">
+
+  <img src="readme-images/FED WCAG Checklist/CL_V1_IMG_7937.png" width="375px" alt="WCAG formulier pagina 4">
+
+  <img src="readme-images/FED WCAG Checklist/CL_V1_IMG_7938.png" width="375px" alt="WCAG formulier pagina 5">
+
+  <img src="readme-images/FED WCAG Checklist/CL_V1_IMG_7939.png" width="375px" alt="WCAG formulier pagina 6">
+
 </details>
 
 
@@ -78,7 +91,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### beide pagina's: 
-  <img src="readme-images/breakdownsheet_wk1.png" width="1200px" alt="Breakdownsheet">
+
+  <img src="readme-images/1b_breakdownschets_wk1.png" width="375px" alt="breakdown van de hele pagina before">
 
 </details>
 
@@ -112,26 +126,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Samen met 2 studentassistenten Sybren Loos en Christopher Willems zijn we in de les van 26 november de 'Breakdown' opdracht gaan doornemen. We zijn de HTML structuur na gegaan of alles logisch was opgebouwd en kwamen tot een nieuwe iteratie slag. De Homepage 'main' bestaat uit 3 delen zou je kunnen zeggen: 1 (hoofd)section, 4 articles, 1 (eind)section. Na wat sparren is er besloten om de 4 articles in 1 section de doen.
 
   Verder gaven ze aan dat mijn breakdown er prima uitzag en keken we verder naar de opdeling van de code en hoe de site als basis verbeterd kan worden. De enige wijziging was het stoppen van alle articles in 1 section, dit veranderde uiteraard de css drastisch, dus heb ik mijn CSS selectoren zelfstandig aangepast.
-  
-   <img src="readme-images/1b_breakdownschets_wk1.png" width="375px" alt="breakdown van de hele pagina before">
 
   -----
 
   Dan waren we gaan kijken naar de tweede Shop pagina, Christopher en Danny vond het een goed idee dat ik de hele pagina omzet naar een Grid waarbij ik 2 kolommen aan maak voor als basis.
   
-  Samen met een klasgenoot hebben we elkaars site geanalyseerd door de WCAG checklist bij na te gaan of de huidige site hier aan voldoet. Dit heb ik voor hem ook door de validator laten gaan om na te kijken of er ook andere bevindingen zijn uitgekomen. De checklist van mijn site is door Willem ingevuld, zie bijgevoegd foto's. Die van hem heeft hij ontvangen.
-
-  <img src="readme-images/FED WCAG Checklist/CL_V1_IMG_7934.png" width="375px" alt="WCAG formulier pagina 1">
-  
-  <img src="readme-images/FED WCAG Checklist/CL_V1_IMG_7935.png" width="375px" alt="WCAG formulier pagina 2">
-
-  <img src="readme-images/FED WCAG Checklist/CL_V1_IMG_7936.png" width="375px" alt="WCAG formulier pagina 3">
-
-  <img src="readme-images/FED WCAG Checklist/CL_V1_IMG_7937.png" width="375px" alt="WCAG formulier pagina 4">
-
-  <img src="readme-images/FED WCAG Checklist/CL_V1_IMG_7938.png" width="375px" alt="WCAG formulier pagina 5">
-
-  <img src="readme-images/FED WCAG Checklist/CL_V1_IMG_7939.png" width="375px" alt="WCAG formulier pagina 6">
+  Samen met een klasgenoot hebben we elkaars site geanalyseerd door de WCAG checklist bij na te gaan of de huidige site hier aan voldoet. Dit heb ik voor hem ook door de validator laten gaan om na te kijken of er ook andere bevindingen zijn uitgekomen. De checklist van mijn site is door Willem ingevuld, zie bijgevoegd foto's onder het kopje toegankelijkheistest week 1, test 1 was door Willem beoordeeld.
 
   ### Verslag van meeting, hoofdlijnen in het kort:
   hier na afloop snel de uitkomsten van de meeting vastleggen
