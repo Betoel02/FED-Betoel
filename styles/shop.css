@@ -391,7 +391,6 @@ footer section:nth-of-type(1) p {
 
 footer section:nth-of-type(2) {
     display: flex;
-    justify-content: space-between;
     padding: 1em 4em 1em 4em;
     text-decoration: none;
 }
@@ -405,23 +404,37 @@ footer section:nth-of-type(2) a {
     font-size: clamp(.8rem, 1vw, 1.2rem); 
 }
 
+footer section:nth-of-type(2) ul {
+    display: flex;
+    gap: 0.5em;
+    margin: 0;
+    padding: 1em;
+
+}
+
+footer section:nth-of-type(2) li {
+    list-style-type: none;
+    display: flex;
+    align-self: flex-end;
+}
+
 footer section:nth-of-type(2) img {
    height: 100%;
    padding: .5em;
 }
 
-footer ul{
+footer section:nth-of-type(3) ul{
     display: flex;
     justify-content: space-evenly;
     padding: 2em;
 }
 
-footer ul li {
+footer section:nth-of-type(3) ul li {
     list-style-type: none;
     width: 20%;
 }
 
-footer ul li img {
+footer section:nth-of-type(3) ul li img {
     width: 100%;
 }
 
@@ -455,12 +468,66 @@ footer ul li img {
   }
 
 
+  header button {
+    z-index: 999;
+    position: relative;
+    order: -1;
+    background-color: transparent;
+    border: none;
+    padding-left: 2em;
+  }
+
+  
+
+  @media screen and (max-width:800px) {
+    header{
+        background: var(--color-yellow);
+    }
+ 
+    header nav:nth-child(n) {
+        display: none;
+    }
+ 
+    header button{
+        display: block;
+    }
+ 
+    header button {
+        z-index: 999;
+        position: relative;
+        order: -1;
+        background-color: transparent;
+        border: none;
+        padding-left: 2em;
+        transition: 1s;
+    }
+
+    main section:nth-of-type(1) > article:nth-of-type(1) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    main section:nth-of-type(1) > article:nth-of-type(1) video {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+
+    main section:nth-of-type(1) > article:nth-of-type(1) > section {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+    }
+
+    main section:nth-of-type(1) ul,
+    main section:nth-of-type(3) ul {
+        flex-direction: column;
+    }
+  }
+
 @media screen and (max-width:1200px) {
     main {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        background-color: pink;
       }
 
       main section:nth-of-type(1), 
@@ -477,3 +544,4 @@ footer ul li img {
         padding: 0;
       }
 }
+

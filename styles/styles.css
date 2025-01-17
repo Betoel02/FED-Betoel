@@ -66,12 +66,14 @@ header nav {
   display: flex;
   justify-content: end;
   z-index: 2;
+  width: 100%;
 }
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
+  gap: 3%;
   padding: 1em;
+  width: 100%;
 }
 
 header nav ul li {
@@ -125,6 +127,10 @@ header nav a:nth-of-type(1) img {
   width: 1.6em;
 }
 
+header nav > a:nth-of-type(1) {
+  padding: 0 2em 0 0;
+}
+
 header nav a:nth-of-type(2) img {
   width: 10em;
 }
@@ -133,10 +139,14 @@ header nav ul.toonMenu {
   display: block;
   display: flex;
   flex-direction: column;
+  padding: 4em;
 
   background-color: var(--color-yellow);
   width: 100%;
+}
 
+header nav ul.toonMenu li {
+  padding: 3em;
 }
 
 /* Line effecttttt */
@@ -317,7 +327,7 @@ main section:nth-of-type(3) a img {
 
 main section:nth-of-type(2) a:hover,
 main section:nth-of-type(3) a:hover {
-  padding-left: .5em;
+  /* padding-left: .5em; */
   transition: 0.5s all;
 }
 
@@ -377,7 +387,6 @@ main section:nth-of-type(2)  article h3 {
 main section:nth-of-type(2)  article p {
   font-size: clamp(1.1rem, 1.4vw, 1.2rem); 
 }
-
 
 main section:nth-of-type(2) article a:nth-last-of-type(1) img {
   filter: invert(100%);
@@ -448,10 +457,6 @@ main section:nth-last-of-type(3) h3 {
   font-size: clamp(3rem, 5vw, 6rem);
 }
 
-main section:nth-of-type(3) p {
-  
-}
-
 main section:nth-of-type(3) ul {
   list-style: none;
   display: flex;
@@ -462,6 +467,12 @@ main section:nth-of-type(3) ul {
   background-size: cover;
    width: 30%; /* dit was voorheen 100%  */
 }
+
+main section:nth-of-type(3) > a:hover > img,
+main section:nth-of-type(2)  {
+  padding-left: 1em;
+}
+
 
 footer section {
   display: flex;
@@ -506,10 +517,10 @@ footer section img {
     flex-direction: column;
     align-items: center;
   }
-  
+
   main section:nth-of-type(2) article {
-    width: 15em;
-    height: 25em;
+    width: 85%;
+    height: fit-content;
   }
 
 
