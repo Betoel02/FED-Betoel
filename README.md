@@ -92,10 +92,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-  <img src="readme-images/1c_voortgangsgesprek_.png" width="375px" alt="breakdown van de hele pagina before">
-
   ### Voorbereiding en eerste feedback
-  Voor op de home pagina had ik een aantal vragen over de uitdaging van de horizontale scroll effect. Ik dacht eerst aan het begin dat het verstandig was om de scroll effect als carrousel te zien, echt vond ik het idee om de de kaartjes beter in een list te stoppen, logischer. Dus heb ik mijn vraag voorgelegd aan hem, waarna hij het volgende op antwoordde: "Om eerst de horizontale scroll effect aan te pakken kun je het volgde regel toepassen":
+  Voor op de home pagina had ik een aantal vragen over de grote uitdaging van hoe ik de website horizontaal kan maken, een soort scroll effect. Ik dacht eerst aan het begin dat het verstandig was om de scroll effect als carrousel te zien, echt vond ik het idee om de de kaartjes beter in een list te stoppen, logischer. Dus heb ik mijn vraag voorgelegd aan hem, waarna hij het volgende op antwoordde: "Om eerst de horizontale scroll effect aan te pakken kun je het volgde regel toepassen":
   
   main {
      overflow-x: scroll;
@@ -113,10 +111,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Samen met 2 studentassistenten Sybren Loos en Christopher Willems zijn we in de les van 26 november de 'Breakdown' opdracht gaan doornemen. We zijn de HTML structuur na gegaan of alles logisch was opgebouwd en kwamen tot een nieuwe iteratie slag. De Homepage 'main' bestaat uit 3 delen zou je kunnen zeggen: 1 (hoofd)section, 4 articles, 1 (eind)section. Na wat sparren is er besloten om de 4 articles in 1 section de doen.
 
-  <img src="readme-images/1c_voortgangsgesprek_.png" width="375px" alt="breakdown van de hele pagina before">
-
   Verder gaven ze aan dat mijn breakdown er prima uitzag en keken we verder naar de opdeling van de code en hoe de site als basis verbeterd kan worden. De enige wijziging was het stoppen van alle articles in 1 section, dit veranderde uiteraard de css drastisch, dus heb ik mijn CSS selectoren zelfstandig aangepast.
   
+   <img src="readme-images/1b_breakdownschets_wk1.png" width="375px" alt="breakdown van de hele pagina before">
+
   -----
 
   Dan waren we gaan kijken naar de tweede Shop pagina, Christopher en Danny vond het een goed idee dat ik de hele pagina omzet naar een Grid waarbij ik 2 kolommen aan maak voor als basis.
@@ -171,7 +169,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   - In shop pagina moet de banner in de header ipv de main, ivm de grid voor op de hele main.
   - p
-- ...
 
 </details>
 
@@ -187,6 +184,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+ <img src="FED" width="375px" alt="breakdown van de hele pagina before">
+
+<img src="readme-images/FED WCAG Checklist 2/CL_V2_IMG_0555.jpg" width="375px" alt="WCAG formulier test 2 pagina 1">
+
+<img src="readme-images/FED WCAG Checklist 2/CL_V2_IMG_0556.jpg" width="375px" alt="WCAG formulier test 2 pagina 2">
+
+<img src="readme-images/FED WCAG Checklist 2/CL_V2_IMG_0557.jpg" width="375px" alt="WCAG formulier test 2 pagina 3">
+
+<img src="readme-images/FED WCAG Checklist 2/CL_V2_IMG_0558.jpg" width="375px" alt="WCAG formulier test 2 pagina 4">
+
+<img src="readme-images/FED WCAG Checklist 2/CL_V2_IMG_0559.jpg" width="375px" alt="WCAG formulier test 2 pagina 5">
+
 </details>
 
 
@@ -201,7 +210,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-Donderdag 11 januari was de laatste voortgangsgesprek. Daarvoor wilde ik 
+  Donderdag 11 januari was de laatste voortgangsgesprek. Daarvoor wilde ik 
 
   ### Agenda voor meeting
   Vragen die ik wil stellen:
