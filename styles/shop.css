@@ -12,6 +12,7 @@
     --color-white-10: rgba(255, 255, 255, 0.8);
     --color-yellow: #FFCE01;
     --color-blue: #0099d9;
+    --bg-label: rgba(255, 255, 255, 0.8);
     --color-light-blue: #F4F6FC;
     --color-dark-gray-blue: #394249;
     --color-dark-gray: #48494B;
@@ -154,7 +155,7 @@ main section figure figcaption {
     position: absolute;
     bottom: 1em;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--bg-label);
     color: var(--color-black); 
     padding: 0.5em; 
     font-size: 1.4em;
@@ -292,6 +293,7 @@ main section article:nth-of-type(1) video {
     width: 100%;
     grid-column:2/3;
     grid-row: 1/2;
+    
 }
 main section article:nth-of-type(1) > section {
     width: 100%;
@@ -390,16 +392,25 @@ footer section:nth-of-type(1) p {
 footer section:nth-of-type(2) {
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-light-blue);
-    border-top: 1px solid var(--color-dark-gray);
+    padding: 1em 4em 1em 4em;
+    text-decoration: none;
+}
+
+footer section:nth-of-type(2) a {
+    text-decoration: none;
+    background-color: var(--color-dark-gray-blue);
+    color: var(--color-white);
+    border-radius: 3em;
+    height: 4em;
+    font-size: clamp(.8rem, 1vw, 1.2rem); 
 }
 
 footer section:nth-of-type(2) img {
    height: 100%;
-   padding: 1em;
+   padding: .5em;
 }
 
-footer ul {
+footer ul{
     display: flex;
     justify-content: space-evenly;
     padding: 2em;

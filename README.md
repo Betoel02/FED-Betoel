@@ -211,7 +211,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   2. Toegankelijkheid WCAG richtlijnen, welke moet ik aan houden?
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen.
 
   Tijdens het gesprek wilde ik graag meer te weten komen over hoe ik de kleur overgang op mijn homepagina het beste zou kunnen aanpakken. Zelf had ik transform gebruikt:
   
@@ -339,6 +338,7 @@ Zelf werk ik toe om de responsive opdracht aan te voldoen waarbij de interface o
   6. https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
   7. https://developer.mozilla.org/en-US/docs/Web/CSS/::after
   8. https://www.w3schools.com/css/css3_transitions.asp
+  9. https://stackoverflow.com/questions/10377453/play-infinitely-looping-video-on-load-in-html5
 
   
 
