@@ -45,27 +45,26 @@ h1 {
 /* Header ---------------------------------- */
 header {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   /* padding: 20px; */
   height: auto;
   width: 100%;
 }
 
-/* Aanzetten voor opdracht eisen? */
 header button {
   display: none;
 }
 
 header nav {
-  width: 100%;
   /* position: fixed; */
+  right: 10em;
   top: 0;
+  bottom: 0;
   left: 0;
   padding: 2em 2em 1em 1em;
   display: flex;
-  justify-content: space-between;
-  /* z-index: 2; */
-  /* background-color: var(--color-background-yellow); */
+  justify-content: end;
+  z-index: 2;
 }
 
 header nav ul {
@@ -96,7 +95,8 @@ header nav ul li a {
 
 header nav ul a::after {
   content: '';
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   width: 0;
   height: 2px;
   background: var(--color-black);
@@ -116,6 +116,15 @@ header nav ul a:hover::after {
   width: 100%;
 }
 
+header > a:nth-of-type(1) {
+  padding: 2em;
+  width: 1.4em;
+}
+
+header > a:nth-of-type(2) {
+  padding: 1em;
+  width: 1.4em;
+}
 
 /* Hover effect with line */
 
@@ -164,26 +173,31 @@ header button {
 
 @media screen and (max-width: 1100px) {
   nav {
-    position: relative;
     overflow: hidden;
-  }
-
-  nav ul.toonMenu {
-    position: absolute;
-    z-index: 2;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 50%;
-    background-color: var(--color-yellow);
-    translate: 0;
-    transition: .3s;
+    position: relative;
+    width: 100%;
   }
 
   nav ul {
-    position: absolute;
+    background-color: var(--color-yellow);
+    transition: .3s;
     translate: 200%;
+
+    position: fixed;
+  right: 10em;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2em 2em 1em 1em;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
   }
+
+  nav ul.toonMenu {
+    translate: 0;
+  }
+
 
   header button {
     display: block;
@@ -193,6 +207,7 @@ header button {
 header nav a:nth-of-type(1),
 header nav a:nth-of-type(2) {
   display: flex;
+  flex-wrap: wrap;
   justify-items: flex-end;
 }
 
@@ -287,10 +302,10 @@ main section:nth-of-type(3) {
 main section:nth-of-type(2) {
   /* display: block; */
   display: flex;
-  animation: 3s linear 1s slidein;
+
 }
 
-@keyframes slide-in {
+/* @keyframes slide-in {
   from {
     transform: translateX(0%);
   }
@@ -298,7 +313,7 @@ main section:nth-of-type(2) {
   to {
     transform: translateX(100%) 2s;
   }
-}
+} */
 
 
 main section:nth-of-type(2) article {
@@ -311,7 +326,6 @@ main section:nth-of-type(2) article {
   background-repeat: no-repeat;
   background-position: center;
   
-  filter: brightness(85%);
   z-index: 1;
   border-radius: 1em;
   color: var(--color-white);
@@ -319,15 +333,9 @@ main section:nth-of-type(2) article {
   
   background-size: cover;
   margin: 1em;
+  transition: 2s;
   /* width: 30%; */
 }
-
-/* main section:nth-of-type(2) article section {
-  position: absolute;
-  width: 100% !important; 
-  bottom: 2em;
-} */
-
 
 /* Kaartjes styling ayeee */
 main section:nth-of-type(3) article h3,
@@ -335,12 +343,12 @@ main section:nth-of-type(3) article p,
 main section:nth-of-type(3)  article > a  {
   width: 100%;
   color: var(--color-white);
-  /* padding: 0 1em 0 1em; */
-  /* bottom: 4em; */
-  /* left: 1em; */
+  padding: 0 1em 0 1em;
+  bottom: 0;
+  left: 1em;
+  z-index: 3;
 }
 
-main
 
 main section:nth-of-type(2)  article h3 {
   font-size: 1.8em;
@@ -383,7 +391,7 @@ main section:nth-of-type(2) article:nth-of-type(1) {
 main section:nth-of-type(2) article:hover {
   /* transform: scale(1.2); */
   background-size: 120%;
-  transition-duration: 2s ease-out;
+  transition-duration: 2s ease-in;
 }
 
 main section:nth-of-type(2) article:nth-of-type(2) {
@@ -480,11 +488,18 @@ footer section img {
     flex-direction: column;
     width: 100%;
   }
+
+  main section:nth-of-type(2) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
   
   main section:nth-of-type(2) article {
-    width: 21em;
-    height: 35em;
+    width: 15em;
+    height: 25em;
   }
+
 
   footer section {
     display: none;

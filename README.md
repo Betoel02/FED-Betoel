@@ -93,13 +93,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   <img src="readme-images/1c_voortgangsgesprek_.png" width="375px" alt="breakdown van de hele pagina before">
 
-  Samen met 2 studentassistenten Sybren Loos en Christopher Willems zijn we in de les van 26 november de 'Breakdown' opdracht gaan doornemen. We zijn de Html structuur na gegaan of alles logisch was opgebouwd en kwamen tot een nieuwe iteratie slag. Namelijk de Homepage main bestaat uit 3 delen zou je kunnen zeggen: 1 (hoofd)section, 4 articles, 1 (eind)section. Na wat sparren is er besloten om de 4 articles in 1 section de doen.
-  
-  Met Marten heb ik het er over gehad om de dubbele navbar in de header in een hamburger menu te stoppen voor als ik de responsive opdracht wil gaan doen zodat ik aan de beoordelingseisen kan voldoen door gebruik te maken van javascript. Want op de oorspronkelijke site is er geen hamburger menu tenzij je overschakeld naar kleinere scherm, dan is de hamburger menu zichtbaar.
-
-  <img src="readme-images/1c_voortgangsgesprek_.png" width="375px" alt="breakdown van de hele pagina before">
-
-  Zelf twijfelde ik wat handig was over de opdeling hiervan, dus dit bracht mij tot een nieuwe inzicht. Daarnaast gaf hij aan dat mijn breakdown er prima uitzag en keken we verder naar de opdeling van de code en hoe de site als basis aangepakt kan worden. Voor op de home pagina had ik een aantal vragen over de uitdaging van de horizontale scroll effect. Ik dacht eerst aan het begin dat het verstandig was om de scroll effect als carrousel te zien, echt vond ik het idee om de de kaartjes beter in een list te stoppen, logischer. Dus heb ik mijn vraag voorgelegd aan hem, waarna hij het volgende op antwoordde: "Om eerst de horizontale scroll effect aan te pakken kun je het volgde regel toepassen":
+  ### Voorbereiding en eerste feedback
+  Voor op de home pagina had ik een aantal vragen over de uitdaging van de horizontale scroll effect. Ik dacht eerst aan het begin dat het verstandig was om de scroll effect als carrousel te zien, echt vond ik het idee om de de kaartjes beter in een list te stoppen, logischer. Dus heb ik mijn vraag voorgelegd aan hem, waarna hij het volgende op antwoordde: "Om eerst de horizontale scroll effect aan te pakken kun je het volgde regel toepassen":
   
   main {
      overflow-x: scroll;
@@ -108,11 +103,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Bron: https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x
 
-  Ik heb deze regel toepgepast in mijn code nadat ik thuis aankwam, echter is het mij niet gelukt om deze werkend te krijgen. Morgen zal ik dit opnieuw proberen.
+  Eerste keer dat ik de regel had toepgepast werkte het niet, later kwam ik er achter dat het aan mijn selector lag.
 
-  Andere vraag die ik had over de Home page scroll effect was de kleur overgang van: geel- oranje naar paars. Hij gaf aan dat ik dit kon doen door vanaf een X aantal px breedte van het scherm, de kleur overgang geleidelijk kan laten overzetten naar een ander kleur. Dit kon ik beter later toepassen voor als ik een 10 wilde gaan, aangezien het een lastigere uitdaging is en met javascript alleen gedaan kon worden door breakpoint te definieren op de pagina.
+  Andere vraag die ik had over de Home page scroll effect was de kleur overgang van: geel naar oranje en tenslotte naar paars. Hij gaf aan dat ik dit kon bereiken door een X aantal px aan te geven door een zogehete 'breakpoint' van de breedte van het scherm, de kleur overgang geleidelijk kan laten overzetten naar een ander kleur. Wel gaf hij aan dat ik dit beter later kon oppakken aangezien ik voor responsive ga en het  toepassen er van alleen iets is voor als ik voor een 10 wilde gaan. Het voeren van de nauwkeurige breakpoint kon bereikt worden door in javascript verder door te pakken, door de breakpoint te definieren op de pagina.
 
-  Ten slotte waren we gaan kijken naar de tweede Shop pagina, Christopher en Danny vond het een goed idee dat ik de hele pagina omzet naar een Grid waarbij ik 2 kolommen aan maak voor als basis. Wat ik wel tijdens de feedback gesprek heb aangepast was de banner, deze had ik voorheen in een section gedaan in de main, wat uiteindelijk heb aangepast naar een header. Zo kan er over de algehele main een grid ingezet worden. 
+  Ik heb verder geen bron kunnen vinden hoe dit bereikt kon worden, dus had ik alleen op mijn huidige gradient een timer op gezet voor bij het openen van de site, bron:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images/Using_CSS_gradients
+
+  Samen met 2 studentassistenten Sybren Loos en Christopher Willems zijn we in de les van 26 november de 'Breakdown' opdracht gaan doornemen. We zijn de HTML structuur na gegaan of alles logisch was opgebouwd en kwamen tot een nieuwe iteratie slag. De Homepage 'main' bestaat uit 3 delen zou je kunnen zeggen: 1 (hoofd)section, 4 articles, 1 (eind)section. Na wat sparren is er besloten om de 4 articles in 1 section de doen.
+
+  <img src="readme-images/1c_voortgangsgesprek_.png" width="375px" alt="breakdown van de hele pagina before">
+
+  Verder gaven ze aan dat mijn breakdown er prima uitzag en keken we verder naar de opdeling van de code en hoe de site als basis verbeterd kan worden. De enige wijziging was het stoppen van alle articles in 1 section, dit veranderde uiteraard de css drastisch, dus heb ik mijn CSS selectoren zelfstandig aangepast.
+  
+  -----
+
+  Dan waren we gaan kijken naar de tweede Shop pagina, Christopher en Danny vond het een goed idee dat ik de hele pagina omzet naar een Grid waarbij ik 2 kolommen aan maak voor als basis.
   
   Samen met een klasgenoot hebben we elkaars site geanalyseerd door de WCAG checklist bij na te gaan of de huidige site hier aan voldoet. Dit heb ik voor hem ook door de validator laten gaan om na te kijken of er ook andere bevindingen zijn uitgekomen. De checklist van mijn site is door Willem ingevuld, zie bijgevoegd foto's. Die van hem heeft hij ontvangen.
 
@@ -132,7 +138,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - Breakdown sheet besproken (navbar fix).
-  - Horizontale scroll effect= overflow-x: scroll;
+  - Horizontale scroll, overflow-x: scroll;
   - Gradient break is verbonden aan X aantal px, dit is alleen een bonus voor de surface plane.
   - Grid kan ik prima toepassen op mijn tweede Shop pagina in plaats van een aside. 
 
@@ -149,15 +155,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-  Samen met Sybren en Christopher zijn we gaan kijken naar de 
+  Samen met Sybren waren we gaan kijken naar de home page en hebben we de 
+  
+  Van Danny kreeg ik de tip of de banner in de header te stoppen ipv de main. Deze had ik voorheen in een section gedaan in de main omdat ik dacht dat het een onderdeel daarvan moest zijn ivm met de content wat reclame gerelateerd is, dit heb ik uiteindelijk aangepast. Zo kan er over de gehele main een grid ingezet worden. 
 
+  Daarnaast liep ik tegen de hamburgermenu aan die niet volledig vertoonde. Het leek wel te verstoppen achter de main wanneer je op de knop drukte. Ik had geprobeerd met z-index in css het probleem te verhelpen - echter lukte dit niet. Sybron en ik hadden toen kort samen gezeten en na wat experimenteren hadden we onder andere een ander element gespot met ook een z-index die een gele background colour had. Dit bleek hem uiteindelijk ook niet te zijn dus hadden we die uitgezet. Door middel van inspector hadden we wat andere regels uitgezet waardoor het uiteindelijk wel werkte, dit kwam door half afgemaakte stukken css stukken die ik weg had moeten laten.
+
+  Van Christopher kreeg ik advies hoe ik mijn css kan opschonen en gaf hij me een extra tip over het toepassen van 'clamp' om tekst responsive maken.
+
+  font-size: clamp(3rem, 5vw, 6rem); 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - In shop pagina moet de banner in de header ipv de main, ivm de grid voor op de hele main.
+  - p
 - ...
 
 </details>
@@ -218,6 +230,67 @@ Donderdag 11 januari was de laatste voortgangsgesprek. Daarvoor wilde ik
   <img src="readme-images/1c_voortgangsgesprek_.png" width="375px" alt="breakdown van de hele pagina">
 
   Echter weet ik niet of dit mij zal lukken binnen de deadline, dus heb ik dit open laten staan voor een mogelijke bonus.
+
+  ________________
+  Logo en search icon in de nav versus buiten nav
+
+    <header>
+      <button aria-label="Open menu">
+        <img src="images/menu_icon.svg" alt=""/>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Bezoek & Tickets</a></li>
+          <li><a href="#">Kunst & Verhalen</a></li>
+          <li><a href="#">Over</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="#">NL | En</a></li>
+        </ul>
+      </nav>
+      <a href="#"><img src="images/search_icon.svg" alt="search button"/></a>
+      <a href="index.html"><img src="images/van_gogh_museum_logo.svg" alt="Van Gogh logo"/></a>
+    </header>
+
+  ______
+
+      <header>
+      <button aria-label="Open menu">
+        <img src="images/menu_icon.svg" alt=""/>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Bezoek & Tickets</a></li>
+          <li><a href="#">Kunst & Verhalen</a></li>
+          <li><a href="#">Over</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="#">NL | En</a></li>
+          <li>
+            <a href="#"><img src="images/search_icon.svg" alt="search button"/></a>
+          </li>
+          <li>
+            <a href="index.html"><img src="images/van_gogh_museum_logo.svg" alt="Van Gogh logo"/></a>
+        </ul>
+      </nav>
+    </header>
+
+  ________________
+  
+Tijdens de derde/ laatste feedback gesprek op donderdag 9 januari. Zijn Christopher en ik door mijn code heen gegaan en gaan kijken naar welke onderdelen ontbreken, om volledig aan de beoordelingscriteria te voldoen. Christopher gaf mij de tip om gebruik te maken van reduced motion in css voor een meer inclusievere UI oplossing. Deze functie zorgde ervoor dat mensen met een visuele beperking hun voorkeuren kunnen aangeven in de instellingen van hun laptop of computer om snelle interacties en bewegingen uit te zetten, zie onderstaande voorbeeld:
+
+@media (prefers-reduced-motion:reduce) {
+    *{
+        animation: none;
+        transition: none;
+    }
+}
+
+Zelf werk ik toe om de responsive opdracht aan te voldoen waarbij de interface op mobile en desktop zich anders vertoont. Ik heb voor de homepage op desktop een volledige horizontale scroll op de main. Voor mobile is dit een verticale scroll. Dit was mij wel gelukt om het werkend te krijgen, echter voor mijn shop pagina was ik in twijfels of Grid en responsiveness samen gaan.  Dus dat wilde ik nog gaan aanpakken.  De desktop was wel goed behalve dan mobile nog aanpassen met @media queries. Na een gesprek met Sybren gaf hij mij de tip om de section in de main meer responsive te maken door
+
+
+
+
 
   Daarin had ik vermeld dat 
   - punt 2
