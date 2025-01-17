@@ -52,7 +52,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Shop pagina 
   <img src="readme-images/1b_shop_page_van_gogh_museum.png" width="375px" alt="Gehele verticale scroll pagina">
   
-  De shop pagina is wel anders dan de home, Home pagina is horizontale scroll en shop pagina is verticall scrollen, vandaar dat ik de css file zal scheiden.
+  De shop pagina is wel anders dan de home, Home pagina is horizontale scroll en shop pagina is verticall scrollen, vandaar dat ik de css file zal scheiden. 
  
 </details>
 
@@ -65,7 +65,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-  - De website is niet responsief, de website is niet aangepast aan verschillende 
+  - De website is wel responsive maar heeft wel een aantal zwaktes zoals op de shop pagina waar het minder goed mee schaalt.
+  - Met voice over leest de site op de home wel alle linkjes op de 'heading' na van section 1 en section 3. Daarnaast leest het systeem ook andere teksten in het zelfde link wat geselecteerd. Deze teksten voegen inhoudelijk geen waarde toe en hadden niet hoeven uitgesproken te worden. Waarschijnlijk zijn de alt-teksten niet goed ingevuld.
 
 </details>
 
