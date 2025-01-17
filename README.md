@@ -104,9 +104,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-  ### Voorbereiding en eerste feedback
   Voor op de home pagina had ik een aantal vragen over de grote uitdaging van hoe ik de website horizontaal kan maken, een soort scroll effect. Ik dacht eerst aan het begin dat het verstandig was om de scroll effect als carrousel te zien, echt vond ik het idee om de de kaartjes beter in een list te stoppen, logischer. Dus heb ik mijn vraag voorgelegd aan hem, waarna hij het volgende op antwoordde: "Om eerst de horizontale scroll effect aan te pakken kun je het volgde regel toepassen":
   
   main {
@@ -131,7 +129,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Dan waren we gaan kijken naar de tweede Shop pagina, Christopher en Danny vond het een goed idee dat ik de hele pagina omzet naar een Grid waarbij ik 2 kolommen aan maak voor als basis.
   
-  Samen met een klasgenoot hebben we elkaars site geanalyseerd door de WCAG checklist bij na te gaan of de huidige site hier aan voldoet. Dit heb ik voor hem ook door de validator laten gaan om na te kijken of er ook andere bevindingen zijn uitgekomen. De checklist van mijn site is door Willem ingevuld, zie bijgevoegd foto's onder het kopje toegankelijkheistest week 1, test 1 was door Willem beoordeeld.
+  Samen met een klasgenoot hebben we elkaars site geanalyseerd door de WCAG checklist bij na te gaan of de huidige site hier aan voldoet. Dit heb ik voor hem ook door de validator laten gaan om na te kijken of er ook andere bevindingen zijn uitgekomen. De checklist van mijn site is door Willem ingevuld (test 1), zie bijgevoegd foto's onder het kopje toegankelijkheistest week 1.
 
   ### Verslag van meeting, hoofdlijnen in het kort:
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -152,10 +150,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-  Samen met Sybren waren we gaan kijken naar de home page en hebben we de 
-  
   Van Danny kreeg ik de tip of de banner in de header te stoppen ipv de main. Deze had ik voorheen in een section gedaan in de main omdat ik dacht dat het een onderdeel daarvan moest zijn ivm met de content wat reclame gerelateerd is, dit heb ik uiteindelijk aangepast. Zo kan er over de gehele main een grid ingezet worden. 
 
   Daarnaast liep ik tegen de hamburgermenu aan die niet volledig vertoonde. Het leek wel te verstoppen achter de main wanneer je op de knop drukte. Ik had geprobeerd met z-index in css het probleem te verhelpen - echter lukte dit niet. Sybron en ik hadden toen kort samen gezeten en na wat experimenteren hadden we onder andere een ander element gespot met ook een z-index die een gele background colour had. Dit bleek hem uiteindelijk ook niet te zijn dus hadden we die uitgezet. Door middel van inspector hadden we wat andere regels uitgezet waardoor het uiteindelijk wel werkte, dit kwam door half afgemaakte stukken css stukken die ik weg had moeten laten.
@@ -184,17 +178,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
- <img src="FED" width="375px" alt="breakdown van de hele pagina before">
 
-<img src="readme-images/FED WCAG Checklist 2/CL_V2_IMG_0555.jpg" width="375px" alt="WCAG formulier test 2 pagina 1">
+  <img src="readme-images/FED WCAG Checklist 2/CL_V2_IMG_0555.jpg" width="375px" alt="WCAG formulier test 2 pagina 1">
 
-<img src="readme-images/FED WCAG Checklist 2/CL_V2_IMG_0556.jpg" width="375px" alt="WCAG formulier test 2 pagina 2">
+  <img src="readme-images/FED WCAG Checklist 2/CL_V2_IMG_0556.jpg" width="375px" alt="WCAG formulier test 2 pagina 2">
 
-<img src="readme-images/FED WCAG Checklist 2/CL_V2_IMG_0557.jpg" width="375px" alt="WCAG formulier test 2 pagina 3">
+  <img src="readme-images/FED WCAG Checklist 2/CL_V2_IMG_0557.jpg" width="375px" alt="WCAG formulier test 2 pagina 3">
 
-<img src="readme-images/FED WCAG Checklist 2/CL_V2_IMG_0558.jpg" width="375px" alt="WCAG formulier test 2 pagina 4">
+  <img src="readme-images/FED WCAG Checklist 2/CL_V2_IMG_0558.jpg" width="375px" alt="WCAG formulier test 2 pagina 4">
 
-<img src="readme-images/FED WCAG Checklist 2/CL_V2_IMG_0559.jpg" width="375px" alt="WCAG formulier test 2 pagina 5">
+  <img src="readme-images/FED WCAG Checklist 2/CL_V2_IMG_0559.jpg" width="375px" alt="WCAG formulier test 2 pagina 5">
 
 </details>
 
@@ -235,7 +228,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
       line-height: 1.375;
   }
 
-  Van Marten had ik geleerd dat ik dit het beste kon doen door de viewport van de totale width van het gehele horizontale scroll pagina, op te splitsen in drieën.
+  Van Marten had ik begrepen dat ik dit het beste kon doen door de viewport van de totale width van het gehele horizontale scroll pagina, op te splitsen in drieën.
 
   <img src="readme-images/1c_voortgangsgesprek_.png" width="375px" alt="breakdown van de hele pagina">
 
@@ -296,16 +289,7 @@ Tijdens de derde/ laatste feedback gesprek op donderdag 9 januari. Zijn Christop
     }
 }
 
-Zelf werk ik toe om de responsive opdracht aan te voldoen waarbij de interface op mobile en desktop zich anders vertoont. Ik heb voor de homepage op desktop een volledige horizontale scroll op de main. Voor mobile is dit een verticale scroll. Dit was mij wel gelukt om het werkend te krijgen, echter voor mijn shop pagina was ik in twijfels of Grid en responsiveness samen gaan.  Dus dat wilde ik nog gaan aanpakken.  De desktop was wel goed behalve dan mobile nog aanpassen met @media queries. Na een gesprek met Sybren gaf hij mij de tip om de section in de main meer responsive te maken door
-
-
-
-
-
-  Daarin had ik vermeld dat 
-  - punt 2
-  - nog een punt
-  - ...
+Zelf werk ik toe om de responsive opdracht aan te voldoen waarbij de interface op mobile en desktop zich anders vertoont. Ik heb voor de homepage op desktop een volledige horizontale scroll op de main. Voor mobile is dit een verticale scroll. Dit was mij wel gelukt om het werkend te krijgen, echter voor mijn shop pagina was ik in twijfels of Grid en responsiveness samen gaan.  Dus dat wilde ik nog gaan aanpakken.  De desktop was wel goed behalve dan mobile nog aanpassen met @media queries. Na een gesprek met Sybren gaf hij aan om de section in de main meer responsive te maken door flex box te gebruiken.
 
 </details>
 
@@ -347,8 +331,15 @@ Zelf werk ik toe om de responsive opdracht aan te voldoen waarbij de interface o
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+  2. https://css-tricks.com/introduction-fr-css-unit/
+  3. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images/Using_CSS_gradients
+  4. https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x
+  5. https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
+  6. https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+  7. https://developer.mozilla.org/en-US/docs/Web/CSS/::after
+  8. https://www.w3schools.com/css/css3_transitions.asp
+
+  
 
 </details>

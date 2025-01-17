@@ -11,6 +11,7 @@
   --color-black: #111;
   --color-white: #fff;
   --color-yellow: #ffce01;
+  --color-orange: #E17638;
   --color-blue: #0099d9;
   --font-family: "open sans", sans-serif;
   --font-nunito: "nunito", sans-serif;
@@ -175,14 +176,14 @@ header button {
     translate: 200%;
 
     position: fixed;
-  right: 10em;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  padding: 2em 2em 1em 1em;
-  display: flex;
-  justify-content: space-between;
-  z-index: 2;
+    right: 10em;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2em 2em 1em 1em;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
   }
 
   nav ul.toonMenu {
@@ -233,6 +234,7 @@ main a:hover {
   left: 1em;
 }
 
+
 main section {
   width: fit-content;
   height: auto;
@@ -242,18 +244,25 @@ main section h2 {
   font-size: clamp(3rem, 5vw, 5rem); 
   line-height: 1;
   font-weight: 400;
-  padding: 1em 1em 1em 0;
+  padding: 0em .5em .5em 0;
+}
+
+main section h3 {
+  font-size: clamp(2rem, 3vw, 3rem); 
+  line-height: 1;
+  font-weight: 400;
+  padding: 0em .5em .5em 0;
 }
 
 main section p {
-  font-size: clamp(1.2rem, 1.4vw, 1.5rem); 
+  font-size: clamp(1rem, 1.4vw, 1.2rem); 
   line-height: 1.6;
   font-weight: 400;
   padding-bottom: 1.5em;
 }
 
 main section a {
-  font-size: clamp(1.2rem, 1.4vw, 1.6rem); 
+  font-size: clamp(1.2rem, 1.4vw, 1.2rem); 
   font-weight: 700;
   text-decoration: none;
   color: var(--color-black);
@@ -271,11 +280,10 @@ main section a img {
   /* padding-right: 1em; */
 }
 
-/* Eerste (1) en laatste (3)  */
+/* margin en padding  */
 
-main section:nth-of-type(1),
-main section:nth-of-type(3) {
-  margin: 2em;
+main section:nth-of-type(1) {
+  margin: 3em;
   /* padding: 3em; */
   flex: 0 0 auto;
   width: 40%;
@@ -285,7 +293,15 @@ main section:nth-of-type(3) {
   /* text-wrap: wrap; */
 }
 
+main section:nth-of-type(2) {
+  margin: 0;
+  display: flex;
+}
 
+main section:nth-of-type(3) {
+  margin: 3em;
+  padding-top: 3em;
+}
 
 /* 4x article kaartjes ------------------- */
 
@@ -303,10 +319,6 @@ main section:nth-of-type(2) a:hover,
 main section:nth-of-type(3) a:hover {
   padding-left: .5em;
   transition: 0.5s all;
-}
-
-main section:nth-of-type(2) {
-  display: flex;
 }
 
 /* @keyframes slide-in {
@@ -334,8 +346,8 @@ main section:nth-of-type(2) > article {
   /* backdrop-filter: brightness(60%); */
 
   z-index: 1;
-  width: 25em;
-  height: 50em;
+  width: 22em;
+  height: 40em;
 
   border-radius: 1em;
   color: var(--color-white);
@@ -431,11 +443,7 @@ a[href='/']{
 }
 christopher */
 
-/* 1x section nth(2) ------------------- */
-main section:nth-of-type(3) {
-  padding-top: 10em;
-}
-
+/* 1x section nth(3) ------------------- */
 main section:nth-last-of-type(3) h3 {
   font-size: clamp(3rem, 5vw, 6rem);
 }
@@ -458,7 +466,7 @@ main section:nth-of-type(3) ul {
 footer section {
   display: flex;
   justify-content: flex-end;
-  padding: 2em;
+  padding: 0.2em 2em 0.2em 0.2em;
 }
 
 footer section p {
@@ -470,6 +478,10 @@ footer section img {
   width: 1.2em;
 }
 
+@keyframes body {
+  0%   {background-color: var(--color-yellow);}
+  100%  {background-color: var(--color-orange)}
+}
 
 @media screen and (max-width:500px) {
   main {
