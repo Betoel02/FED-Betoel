@@ -212,29 +212,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Verslag van meeting
 
-  Tijdens het gesprek wilde ik graag meer te weten komen over hoe ik de kleur overgang op mijn homepagina het beste zou kunnen aanpakken. Zelf had ik transform gebruikt:
-  
-  transition: background-color 6s linear;
 
-  En zo zag het er uit in mijn html 'body':
-  
-  body {
-      padding-top: 1em;
-      background-color: var(--color-background-yellow);
-      transition: background-color 6s linear;
-      font-family: var(--font-nunito);
-      font-size: 1rem;
-      line-height: 1.375;
-  }
 
-  Van Marten had ik begrepen dat ik dit het beste kon doen door de viewport van de totale width van het gehele horizontale scroll pagina, op te splitsen in drieën.
 
-  <img src="readme-images/1c_voortgangsgesprek_.png" width="375px" alt="breakdown van de hele pagina">
-
-  Echter weet ik niet of dit mij zal lukken binnen de deadline, dus heb ik dit open laten staan voor een mogelijke bonus.
 
   ________________
-  Logo en search icon in de nav versus buiten nav
+
+  Logo en zoekicoon binnen of buiten de navigatiebalk: deze vraag kwam pas naar voren toen ik begon met het maken van de mobiele responsive schermen. Het besef dat het logo en het zoekicoon zichtbaar moesten zijn wanneer het hamburgermenu is ingeklapt, was een uitdaging. Dit kwam vooral doordat deze elementen al samen waren gestyled binnen de HTML-structuur van de navigatiebalk.
+
+  Voor de homepagina heb ik de tijd genomen om de DOM-manipulatie voor het hamburgermenu uit te voeren en de CSS styling volledig opnieuw op te zetten. Overigens is dit het enige element dat in een button zit om via JavaScript klikbaar te maken. Hier heb ik veel tijd aan besteed.
+
+  Voor de shoppagina zou ik dezelfde wijzigingen moeten doorvoeren, maar dat zou ik niet halen voor de deadline. Het proces zou echter grotendeels hetzelfde zijn. Wat ik wel heb gedaan, is het klikbaar maken van de navigatiebalk op de shoppagina, met als enige verschil dat de content van de navigatiebalk zich niet toont.
+
+  Zo ziet mijn HTML structuur er nu uit:
 
     <header>
       <button aria-label="Open menu">
@@ -248,6 +238,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
           <li><a href="#">Over</a></li>
           <li><a href="shop.html">Shop</a></li>
           <li><a href="#">NL | En</a></li>
+          <!-- hier zaten voorheen de search icon img en logo -->
         </ul>
       </nav>
       <a href="#"><img src="images/search_icon.svg" alt="search button"/></a>
@@ -268,11 +259,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
           <li><a href="#">Over</a></li>
           <li><a href="shop.html">Shop</a></li>
           <li><a href="#">NL | En</a></li>
-          <li>
-            <a href="#"><img src="images/search_icon.svg" alt="search button"/></a>
-          </li>
-          <li>
-            <a href="index.html"><img src="images/van_gogh_museum_logo.svg" alt="Van Gogh logo"/></a>
+          <li><a href="#"><img src="images/search_icon.svg" alt="search button"/></a></li>
+          <li><a href="index.html"><img src="images/van_gogh_museum_logo.svg" alt="Van Gogh logo"/></a>
         </ul>
       </nav>
     </header>
@@ -291,8 +279,6 @@ Tijdens de derde/ laatste feedback gesprek op donderdag 9 januari. Zijn Christop
 Zelf werk ik toe om de responsive opdracht aan te voldoen waarbij de interface op mobile en desktop zich anders vertoont. Ik heb voor de homepage op desktop een volledige horizontale scroll op de main. Voor mobile is dit een verticale scroll. Dit was mij wel gelukt om het werkend te krijgen, echter voor mijn shop pagina was ik in twijfels of Grid en responsiveness samen gaan.  Dus dat wilde ik nog gaan aanpakken.  De desktop was wel goed behalve dan mobile nog aanpassen met @media queries. Na een gesprek met Sybren gaf hij aan om de section in de main meer responsive te maken door flex box te gebruiken.
 
 </details>
-
-
 
 
 
@@ -315,6 +301,14 @@ Zelf werk ik toe om de responsive opdracht aan te voldoen waarbij de interface o
   Korte omschrijving met plaatjes
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+
+  <a href="">
+    <img src="images/nieuwsbrief_icon.svg" alt="nieuwsbrief"/></li>
+    <p>Inschrijven nieuwsbrief</p>
+  </a>
+
+  <a href=""><img src="images/nieuwsbrief_icon.svg" alt=""/>Inschrijven nieuwsbrief</a>
+
 </details>
 
 
@@ -339,7 +333,5 @@ Zelf werk ik toe om de responsive opdracht aan te voldoen waarbij de interface o
   7. https://developer.mozilla.org/en-US/docs/Web/CSS/::after
   8. https://www.w3schools.com/css/css3_transitions.asp
   9. https://stackoverflow.com/questions/10377453/play-infinitely-looping-video-on-load-in-html5
-
   
-
 </details>

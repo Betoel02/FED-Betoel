@@ -80,11 +80,11 @@ header nav ul li {
   display: inline-flex;
   text-wrap: none;
   justify-content: space-around;
+  width: fit-content;
   list-style: none;
   padding: 1em;
   font-weight: 400;
   font-style: normal;
-  width: fit-content;
 }
 
 
@@ -465,7 +465,7 @@ main section:nth-of-type(3) ul {
 
   background-position: center;
   background-size: cover;
-   width: 30%; /* dit was voorheen 100%  */
+  width: 30%; /* dit was voorheen 100%  */
 }
 
 main section:nth-of-type(3) > a:hover > img,
