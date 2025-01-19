@@ -64,7 +64,7 @@ header nav ul li {
     display: inline-flex;
     justify-content: space-around;
     list-style: none;
-    padding: 1em;
+    padding: .5em 1em 0.5em 1em ;
     font-weight: 400;
     font-style: normal;
     width: fit-content;
@@ -259,8 +259,11 @@ main section:nth-of-type(2) ul {
     flex-direction: row; 
     width: 100%; 
     gap: 1em;
+}
 
-   
+main section:nth-of-type(1) h3:hover,
+main section:nth-of-type(2) h3:hover {
+    text-decoration: underline;
 }
 
 main section:nth-of-type(1) li,
@@ -373,7 +376,7 @@ footer {
 
 footer section:nth-of-type(1) ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 5%;
     list-style-type: none;
     background-color: var(--color-dark-gray);
@@ -381,7 +384,7 @@ footer section:nth-of-type(1) ul {
     padding: 1em;
 }
 
-footer section:nth-of-type(1)  ul li {
+footer section:nth-of-type(1) ul li {
     display: flex;
     align-items: center;
 }
@@ -431,10 +434,21 @@ footer section:nth-of-type(2) img {
    padding: .5em;
 }
 
+footer section:nth-of-type(3) a{
+    text-decoration: none;
+    color: var(--color-black);
+    display: flex;
+    line-height: 1.8em;
+}
+
+footer section:nth-of-type(3) a:hover{
+    text-decoration: underline;
+}
+
 footer section:nth-of-type(3) ul{
     display: flex;
     justify-content: space-evenly;
-    padding: 2em;
+    padding: 2em 0 2em 0;
     list-style-type: none;
 }
 
@@ -458,15 +472,17 @@ footer section:nth-of-type(3) ul li img {
       width: 100%;
     }
 
-    main section:nth-of-type(1) {
+    main section:nth-of-type(1) ul {
         display: flex;
+        flex-wrap: wrap;
+    }
+
+    main section:nth-of-type(2){
+        display: block;
         flex-direction: column;
-    
     }
 
     main section:nth-of-type(2) ul {
-        display: flex;
-        flex-direction: column;
         gap: 1em;
         padding: 0; 
         margin: 0;
@@ -479,12 +495,28 @@ footer section:nth-of-type(3) ul li img {
         padding: 1em; 
     }
 
-    main section:nth-of-type(3) {
-
+    footer section:nth-of-type(3) {
+        padding: 0 2em;
+        width: 100%;
     }
 
-    main section:nth-of-type(4) {
+    footer section:nth-of-type(3) ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2em;
+    }
 
+    footer section:nth-of-type(3) ul li {
+        width: 0%;
+    }
+
+    footer section:nth-of-type(3) a{
+        text-decoration: none;
+        color: var(--color-black);
+    }
+
+    footer section:nth-of-type(3) a:hover{
+        text-decoration: underline;
     }
   }
 
@@ -496,6 +528,7 @@ footer section:nth-of-type(3) ul li img {
     background-color: transparent;
     border: none;
     padding-left: 2em;
+
   }
 
   
@@ -544,6 +577,11 @@ footer section:nth-of-type(3) ul li img {
         flex-direction: column;
     }
 
+    main section:nth-of-type(2)  {
+        display: flex;
+        flex-direction: column;
+    }
+
     main section:nth-of-type(2) ul {
         display: flex;
         flex-direction: column;
@@ -558,6 +596,35 @@ footer section:nth-of-type(3) ul li img {
         gap: 0.5em; 
         padding: 1em; 
     }
+
+
+    footer section:nth-of-type(2) {
+        padding: 1em .2em;
+    }
+
+    footer section:nth-of-type(3) {
+        padding: 0 2em;
+        width: 100%;
+    }
+
+    footer section:nth-of-type(3) ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2em;
+    }
+
+    footer section:nth-of-type(3) ul li {
+        width: 100%;
+    }
+
+    footer section:nth-of-type(3) a{
+        text-decoration: none;
+        color: var(--color-black);
+    }
+
+    footer section:nth-of-type(3) a:hover{
+        text-decoration: underline;
+    }
   }
 
 
@@ -566,20 +633,24 @@ footer section:nth-of-type(3) ul li img {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-      }
+    }
 
-      main section:nth-of-type(1), 
-      main section:nth-of-type(2) {
+    main section:nth-of-type(1), 
+    main section:nth-of-type(2) {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-      }
+    }
 
-      main > section:nth-of-type(1), 
-      main > section:nth-of-type(2), 
-      main > section:nth-of-type(3), 
-      main > section:nth-of-type(4) {
+    main > section:nth-of-type(1), 
+    main > section:nth-of-type(2), 
+    main > section:nth-of-type(3), 
+    main > section:nth-of-type(4) {
         padding: 0;
-      }
+    }
+
+      footer section:nth-of-type(3) a:hover{
+        text-decoration: underline;
+    }
 }
 
