@@ -15,7 +15,7 @@ function openMenu() {
   deNav.classList.toggle("toonMenu");
 
   if (deNav.classList.contains("toonMenu")){
-    imgButton.src= "../images/close_icon.svg";
+    imgButton.src= "./images/close_icon.svg";
   }
 
   else {

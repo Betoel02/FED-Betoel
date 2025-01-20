@@ -17,11 +17,6 @@
   --font-nunito: "nunito", sans-serif;
 }
 
-/* @media (prefers-color-scheme:dark) {
-    :root {  
-    }
-} */
-
 body {
   background-color: var(--color-yellow);
   transition: background-color 6s linear;
