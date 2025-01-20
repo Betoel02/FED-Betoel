@@ -9,7 +9,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-
 ## Jij
 
 <details open>
@@ -279,40 +278,6 @@ Tijdens de derde/ laatste feedback gesprek op donderdag 9 januari. Zijn Christop
 Zelf werk ik toe om de responsive opdracht aan te voldoen waarbij de interface op mobile en desktop zich anders vertoont. Ik heb voor de homepage op desktop een volledige horizontale scroll op de main. Voor mobile is dit een verticale scroll. Dit was mij wel gelukt om het werkend te krijgen, echter voor mijn shop pagina was ik in twijfels of Grid en responsiveness samen gaan.  Dus dat wilde ik nog gaan aanpakken.  De desktop was wel goed behalve dan mobile nog aanpassen met @media queries. Na een gesprek met Sybren gaf hij aan om de section in de main meer responsive te maken door flex box te gebruiken.
 
 </details>
-
-
-
-## Eindgesprek (week 5)
-
-<details>
-  <summary>uitwerken voor eindgesprek</summary>
-
-  ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitkomst opdracht 1">
-
-
-  ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
-
-  ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
-
-  <a href="">
-    <img src="images/nieuwsbrief_icon.svg" alt="nieuwsbrief"/></li>
-    <p>Inschrijven nieuwsbrief</p>
-  </a>
-
-  <a href=""><img src="images/nieuwsbrief_icon.svg" alt=""/>Inschrijven nieuwsbrief</a>
-
-</details>
-
-
-
 
 
 ## Bronnenlijst
